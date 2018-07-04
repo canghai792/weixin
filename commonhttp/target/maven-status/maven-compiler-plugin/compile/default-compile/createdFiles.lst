@@ -1,0 +1,13 @@
+com\zzsoft\commonhttp\httpclient\impl\AbstractHttpPerformer$1.class
+com\zzsoft\commonhttp\httpclient\util\Constants.class
+com\zzsoft\commonhttp\httpclient\impl\DefaultHttpPerformer.class
+com\zzsoft\commonhttp\httpclient\cookie\CookieBean.class
+com\zzsoft\commonhttp\httpclient\HttpPerformer.class
+com\zzsoft\commonhttp\httpclient\impl\AbstractHttpPerformer.class
+com\zzsoft\commonhttp\httpclient\impl\JsonHttpPerformer.class
+com\zzsoft\commonhttp\httpclient\cookie\CookiePersistence.class
+com\zzsoft\commonhttp\httpclient\impl\XmlHttpPerformer.class
+com\zzsoft\commonhttp\httpclient\util\Dictionary.class
+com\zzsoft\commonhttp\httpclient\util\HttpClientSetting.class
+com\zzsoft\commonhttp\httpclient\cookie\DefaultCookieSavingPolicy.class
+com\zzsoft\commonhttp\httpclient\CookieSavingPolicy.class
