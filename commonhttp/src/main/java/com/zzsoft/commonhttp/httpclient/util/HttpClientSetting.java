@@ -1,16 +1,7 @@
 package com.zzsoft.commonhttp.httpclient.util;
 
 /**
- * @author cyj
- * <p>
- * Created on 2016年9月13日
- * </p>
- * <p>
- * IBS Product Expert Group, CSII
- * Powered by CSII PowerEngine 6.0
- * </p>
- * @version 1.0
- * @since 1.0
+ *
  */
 public class HttpClientSetting {
 
@@ -48,6 +39,11 @@ public class HttpClientSetting {
      * 默认每个路由最大连接数
      */
     private int maxPerRoute;
+
+    /**
+     * 主机地址
+     */
+    private String url;
 
     /**
      * 代理代理主机IP
@@ -131,4 +127,11 @@ public class HttpClientSetting {
         this.proxyPort = proxyPort;
     }
 
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 }
