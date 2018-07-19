@@ -18,22 +18,18 @@
     <!-- 配置使Spring采用CGLIB代理 -->
     <aop:aspectj-autoproxy proxy-target-class="true"/>
 
-    <util:properties id="wxProperties" location="classpath:/wx.properties"/>
-
-    <util:properties id="wxPayProperties" location="classpath:/wxPay.properties"/>
-
-    <util:properties id="wxProcessProperties" location="classpath:/wxProcess.properties"/>
+    <util:properties id="testProperties" location="classpath:/test.properties"/>
 
     <!-- 微信消息处理服务器配置-->
     <bean id="wxprocesssetting" class="com.zzsoft.commonhttp.httpclient.util.HttpClientSetting">
-        <property name="url" value="#{wxProcessProperties[url]}"></property>
-        <property name="connectTimeout" value="#{wxProcessProperties[connectTimeout]}"></property>
-        <property name="connectionRequestTimeout" value="#{wxProcessProperties[connectionRequestTimeout]}"></property>
-        <property name="socketTimeout" value="#{wxProcessProperties[socketTimeout]}"></property>
-        <property name="sleepTime" value="#{wxProcessProperties[sleepTime]}"></property>
-        <property name="maxIdleTime" value="#{wxProcessProperties[maxIdleTime]}"></property>
-        <property name="maxTotal" value="#{wxProcessProperties[maxTotal]}"></property>
-        <property name="maxPerRoute" value="#{wxProcessProperties[maxPerRoute]}"></property>
+        <property name="url" value="#{testProperties[url]}"></property>
+        <property name="connectTimeout" value="#{testProperties[connectTimeout]}"></property>
+        <property name="connectionRequestTimeout" value="#{testProperties[connectionRequestTimeout]}"></property>
+        <property name="socketTimeout" value="#{testProperties[socketTimeout]}"></property>
+        <property name="sleepTime" value="#{testProperties[sleepTime]}"></property>
+        <property name="maxIdleTime" value="#{testProperties[maxIdleTime]}"></property>
+        <property name="maxTotal" value="#{testProperties[maxTotal]}"></property>
+        <property name="maxPerRoute" value="#{testProperties[maxPerRoute]}"></property>
     </bean>
     <bean id="wxprocesshttp" class="com.zzsoft.commonhttp.httpclient.impl.AbstractHttpPerformer" abstract="true">
         <property name="setting" ref="wxprocesssetting"></property>

@@ -26,7 +26,14 @@
 
     <!-- 微信消息处理服务器配置-->
     <bean id="wxprocesssetting" class="com.zzsoft.commonhttp.httpclient.util.HttpClientSetting">
-        <property name="url" value="${wxProcessProperties[url]}"></property>
+        <property name="url" value="#{wxProcessProperties[url]}"></property>
+        <property name="connectTimeout" value="#{wxProcessProperties[connectTimeout]}"></property>
+        <property name="connectionRequestTimeout" value="#{wxProcessProperties[connectionRequestTimeout]}"></property>
+        <property name="socketTimeout" value="#{wxProcessProperties[socketTimeout]}"></property>
+        <property name="sleepTime" value="#{wxProcessProperties[sleepTime]}"></property>
+        <property name="maxIdleTime" value="#{wxProcessProperties[maxIdleTime]}"></property>
+        <property name="maxTotal" value="#{wxProcessProperties[maxTotal]}"></property>
+        <property name="maxPerRoute" value="#{wxProcessProperties[maxPerRoute]}"></property>
     </bean>
     <bean id="wxprocesshttp" class="com.zzsoft.commonhttp.httpclient.impl.AbstractHttpPerformer" abstract="true">
         <property name="setting" ref="wxprocesssetting"></property>

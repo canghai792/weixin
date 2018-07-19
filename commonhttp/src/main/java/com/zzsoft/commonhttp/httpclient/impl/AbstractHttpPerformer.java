@@ -195,7 +195,7 @@ public abstract class AbstractHttpPerformer implements HttpPerformer {
     @SuppressWarnings("unchecked")
     private HttpRequestBase createHttpGet(Map<String, Object> data) throws IOException {
 
-        String url = this.setting.getUrl();
+        String url = this.setting.getUrl() + data.get(Dictionary.REQUEST_URL);;
         String queryString = "";
 
         Map<String, Object> requestData = (Map<String, Object>) data.get(Dictionary.REQUEST_DATA);
@@ -225,7 +225,7 @@ public abstract class AbstractHttpPerformer implements HttpPerformer {
     @SuppressWarnings("unchecked")
     private HttpRequestBase createHttpPost(Map<String, Object> data) throws IOException {
 
-        String url = this.setting.getUrl();
+        String url = this.setting.getUrl() + data.get(Dictionary.REQUEST_URL);
 
         HttpPost request = new HttpPost(url);
         Map<String, Object> requestData = (Map<String, Object>) data.get(Dictionary.REQUEST_DATA);

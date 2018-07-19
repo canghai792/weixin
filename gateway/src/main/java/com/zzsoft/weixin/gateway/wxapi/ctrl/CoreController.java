@@ -18,6 +18,7 @@ import me.chanjar.weixin.mp.bean.message.WxMpXmlMessage;
 import me.chanjar.weixin.mp.bean.message.WxMpXmlOutMessage;
 import me.chanjar.weixin.mp.bean.result.WxMpOAuth2AccessToken;
 import me.chanjar.weixin.mp.bean.result.WxMpUser;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by FirenzesEagle on 2016/5/30 0030.
@@ -122,7 +123,7 @@ public class CoreController extends GenericController {
             renderString(response, returnModel);
             this.logger.error(e.getError().toString());
         }
-        return wxMpUser;
+        return null;
     }
 
     /**
