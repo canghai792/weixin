@@ -1,5 +1,5 @@
 /*
- * FileName：MsgArticle.java 
+ * FileName：Account.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,12 +16,12 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.domain;
+package com.zzsoft.weixin.dao.domain;
 
-import com.zzsoft.weixin.core.page.Page;
+import com.zzsoft.weixin.wxcms.todo.MpAccount;
 import lombok.Data;
 
-import java.io.Serializable;
+import java.util.Date;
 
 /**
  *
@@ -30,19 +30,9 @@ import java.io.Serializable;
  * @date 2018-04-17 10:54:58
  */
 @Data
-public class MsgArticle  extends Page implements Serializable {
+public class Account extends MpAccount{
+	private String name;//名称
+	private Long id;
+	private Date createtime = new Date();//创建时间
 
-	private Integer arId;
-	private String title;
-	private String author;
-	private String content;
-	private String digest;
-	private Integer showCoverPic;
-	private String picUrl;
-	private String url;
-	private String thumbMediaId;
-	private String contentSourceUrl;
-	private String mediaId;
-	private Integer newsIndex;
-	private Integer newsId;
 }

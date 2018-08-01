@@ -16,7 +16,7 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.domain;
+package com.zzsoft.weixin.dao.domain;
 
 import lombok.Data;
 

@@ -1,5 +1,5 @@
 /*
- * FileName：Account.java 
+ * FileName：MsgText.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,12 +16,9 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.domain;
+package com.zzsoft.weixin.dao.domain;
 
-import com.wxmp.wxapi.process.MpAccount;
 import lombok.Data;
-
-import java.util.Date;
 
 /**
  *
@@ -30,9 +27,9 @@ import java.util.Date;
  * @date 2018-04-17 10:54:58
  */
 @Data
-public class Account extends MpAccount{
-	private String name;//名称
-	private Long id;
-	private Date createtime = new Date();//创建时间
+public class MsgText extends MsgBase{
+	private String title;//消息标题
+	private String content;//消息内容
+	private Long baseId;//消息主表id
 
 }

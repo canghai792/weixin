@@ -1,5 +1,5 @@
 /*
- * FileName：MsgText.java 
+ * FileName：MsgArticle.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,9 +16,12 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.domain;
+package com.zzsoft.weixin.dao.domain;
 
+import com.zzsoft.weixin.core.page.Page;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  *
@@ -27,9 +30,19 @@ import lombok.Data;
  * @date 2018-04-17 10:54:58
  */
 @Data
-public class MsgText extends MsgBase{
-	private String title;//消息标题
-	private String content;//消息内容
-	private Long baseId;//消息主表id
+public class MsgArticle  extends Page implements Serializable {
 
+	private Integer arId;
+	private String title;
+	private String author;
+	private String content;
+	private String digest;
+	private Integer showCoverPic;
+	private String picUrl;
+	private String url;
+	private String thumbMediaId;
+	private String contentSourceUrl;
+	private String mediaId;
+	private Integer newsIndex;
+	private Integer newsId;
 }

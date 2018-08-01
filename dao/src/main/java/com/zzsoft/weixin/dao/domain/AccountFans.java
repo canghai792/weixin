@@ -16,7 +16,7 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.domain;
+package com.zzsoft.weixin.dao.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.zzsoft.weixin.core.page.Page;

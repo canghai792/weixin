@@ -1,5 +1,5 @@
 /*
- * FileName：SysUser.java 
+ * FileName：AccountMenuGroup.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,12 +16,15 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.domain;
+package com.zzsoft.weixin.dao.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.zzsoft.weixin.core.page.Page;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  *
@@ -30,27 +33,11 @@ import java.io.Serializable;
  * @date 2018-04-17 10:54:58
  */
 @Data
-public class SysUser extends Page implements Serializable {
-    
-	//主键id
-	private String id;
-	//用户名
-	private String account;
-	//密码
-	private String pwd;
-	//性别 0男 1女
-	private String sex;
-	//手机号
-	private String phone;
-	//姓名
-	private String trueName;
-	//创建时间
-	private String createTime;
-	//更新时间
-	private String updateTime;
-	//状态
-	private String flag;
-	
-	//新登录密码
-	private String newpwd;
+public class AccountMenuGroup extends Page implements Serializable {
+	private Long id;
+	private String name;
+	private Integer enable;
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm", timezone = "GMT+8")
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm", iso = DateTimeFormat.ISO.DATE_TIME)
+	private Date createTime;//创建时间
 }
