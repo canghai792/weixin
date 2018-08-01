@@ -1,5 +1,5 @@
 /*
- * FileName：SysUserDao.java 
+ * FileName：ImgResourceDao.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,9 +16,11 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.mapper;
+package com.zzsoft.weixin.dao.mapper;
 
-import com.zzsoft.weixin.wxcms.domain.SysUser;
+import com.zzsoft.weixin.dao.domain.ImgResource;
+
+import java.util.List;
 
 /**
  *
@@ -26,25 +28,34 @@ import com.zzsoft.weixin.wxcms.domain.SysUser;
  * @version 2.0
  * @date 2018-04-17 10:54:58
  */
-public interface SysUserDao {
 
+public interface ImgResourceDao {
+	
 	/**
-	 * 根据用户名密码查询
-	 * @param sysUser
+	 * 分页查询
+	 * @param entity
 	 * @return
 	 */
-    public SysUser getSysUser(SysUser sysUser);
-    
+	public List<ImgResource> getImgListByPage(ImgResource entity);
 	/**
-	 * 根据用户名密码查询
-	 * @param userId
+	 * 获取图片信息
+	 * @param id
 	 * @return
 	 */
-    public SysUser getSysUserById(String userId);
-    
-    /**
-     * 修改登录密码
-     * @param sysUser
-     */
-    public void updateLoginPwd(SysUser sysUser);
+	public ImgResource getImgById(String id);
+	
+	/**
+	 * 创建资源
+	 * @param img
+	 * @return
+	 */
+	public void add(ImgResource img);
+	
+	/**
+	 * 删除中间表记录
+	 * @param otherId
+	 * @return
+	 */
+	public void deleteByMediaId(String otherId);
+	
 }

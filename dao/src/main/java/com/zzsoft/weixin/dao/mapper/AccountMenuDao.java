@@ -1,5 +1,5 @@
 /*
- * FileName：SysConfigDao.java 
+ * FileName：AccountMenuDao.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,10 +16,9 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.mapper;
+package com.zzsoft.weixin.dao.mapper;
 
-import com.zzsoft.weixin.wxcms.domain.SysConfig;
-import org.apache.ibatis.annotations.Param;
+import com.zzsoft.weixin.dao.domain.AccountMenu;
 
 import java.util.List;
 
@@ -29,25 +28,22 @@ import java.util.List;
  * @version 2.0
  * @date 2018-04-17 10:54:58
  */
-public interface SysConfigDao {
+public interface AccountMenuDao {
 
-	/**
-	 * 获取所有数据
-	 */
-	List<SysConfig> getConfigList();
+	public AccountMenu getById(String id);
 
-	/**
-	 * 更新数据库信息
-	 */
-	boolean update(@Param("key") String key, @Param("value") String value);
+	public List<AccountMenu> listForPage(AccountMenu searchEntity);
 
-	/**
-	 * 获取单一
-	 */
-	String getValue(@Param("key") String key);
+	public List<AccountMenu> listParentMenu(AccountMenu entity);
+	
+	public List<AccountMenu> listWxMenus(AccountMenu entity);
+	
+	public void add(AccountMenu entity);
 
-	/**
-	 * 查询数据库版本
-	 */
-	public String getMysqlVsesion();
+	public void update(AccountMenu entity);
+
+	public void delete(AccountMenu entity);
+
+
+
 }

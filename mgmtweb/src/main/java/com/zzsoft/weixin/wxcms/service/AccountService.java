@@ -18,7 +18,7 @@
  */
 package com.zzsoft.weixin.wxcms.service;
 
-import com.zzsoft.weixin.wxcms.domain.Account;
+import com.zzsoft.weixin.dao.domain.Account;
 
 import java.util.List;
 

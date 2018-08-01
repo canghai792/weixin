@@ -18,7 +18,7 @@
  */
 package com.zzsoft.weixin.wxcms.service;
 
-import com.zzsoft.weixin.wxcms.domain.AccountMenuGroup;
+import com.zzsoft.weixin.dao.domain.AccountMenuGroup;
 
 import java.util.List;
 

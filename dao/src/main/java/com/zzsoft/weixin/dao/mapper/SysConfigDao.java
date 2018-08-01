@@ -1,5 +1,5 @@
 /*
- * FileName：MediaFilesDao.java 
+ * FileName：SysConfigDao.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,9 +16,10 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.mapper;
+package com.zzsoft.weixin.dao.mapper;
 
-import com.zzsoft.weixin.wxcms.domain.MediaFiles;
+import com.zzsoft.weixin.dao.domain.SysConfig;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -28,34 +29,25 @@ import java.util.List;
  * @version 2.0
  * @date 2018-04-17 10:54:58
  */
-public interface MediaFilesDao {
+public interface SysConfigDao {
 
-	public void add(MediaFiles entity);
-	
-	public List<MediaFiles> getMediaFileList();
-	
 	/**
-	 *  分页
-	 * @param entity
-	 * @return
+	 * 获取所有数据
 	 */
-	public List<MediaFiles> getMediaListByPage(MediaFiles entity);
-	
+	List<SysConfig> getConfigList();
+
 	/**
-	 * 删除
-	 * @param id
+	 * 更新数据库信息
 	 */
-	public void deleteByMediaId(String mediaId);
+	boolean update(@Param("key") String key, @Param("value") String value);
+
 	/**
-	 * 获取单条数据
-	 * @param mediaId
-	 * @return
+	 * 获取单一
 	 */
-	public MediaFiles getFileByMediaId(String mediaId);
+	String getValue(@Param("key") String key);
+
 	/**
-	 * 条件查询
-	 * @param mediaId
-	 * @return
+	 * 查询数据库版本
 	 */
-	public MediaFiles getFileBySou(MediaFiles entity);
+	public String getMysqlVsesion();
 }

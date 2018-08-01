@@ -25,7 +25,7 @@ import com.zzsoft.weixin.core.common.Constants;
 import com.zzsoft.weixin.core.util.AjaxResult;
 import com.zzsoft.weixin.core.util.wx.WxUtil;
 import com.wxmp.wxapi.vo.Matchrule;
-import com.zzsoft.weixin.wxcms.domain.AccountMenu;
+import com.zzsoft.weixin.dao.domain.AccountMenu;
 import com.zzsoft.weixin.wxcms.service.AccountMenuService;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;

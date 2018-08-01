@@ -24,7 +24,7 @@ import com.zzsoft.weixin.core.util.AjaxResult;
 import com.zzsoft.weixin.core.util.ImgTypeUtil;
 import com.zzsoft.weixin.core.util.PropertiesUtil;
 import com.wxmp.wxapi.process.*;
-import com.zzsoft.weixin.wxcms.domain.ImgResource;
+import com.zzsoft.weixin.dao.domain.ImgResource;
 import com.zzsoft.weixin.wxcms.service.ImgResourceService;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;

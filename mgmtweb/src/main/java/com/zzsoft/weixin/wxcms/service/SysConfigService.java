@@ -18,7 +18,7 @@
  */
 package com.zzsoft.weixin.wxcms.service;
 
-import com.zzsoft.weixin.wxcms.domain.SysConfig;
+import com.zzsoft.weixin.dao.domain.SysConfig;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;

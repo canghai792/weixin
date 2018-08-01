@@ -20,7 +20,7 @@ package com.zzsoft.weixin.wxcms.ctrl;
 
 import com.zzsoft.weixin.core.common.BaseCtrl;
 import com.zzsoft.weixin.core.util.AjaxResult;
-import com.zzsoft.weixin.wxcms.domain.AccountFans;
+import com.zzsoft.weixin.dao.domain.AccountFans;
 import com.zzsoft.weixin.wxcms.service.AccountFansService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

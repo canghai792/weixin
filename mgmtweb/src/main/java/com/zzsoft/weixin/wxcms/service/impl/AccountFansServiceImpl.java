@@ -18,7 +18,7 @@
  */
 package com.zzsoft.weixin.wxcms.service.impl;
 
-import com.zzsoft.weixin.wxcms.domain.AccountFans;
+import com.zzsoft.weixin.dao.domain.AccountFans;
 import com.zzsoft.weixin.wxcms.mapper.AccountFansDao;
 import com.zzsoft.weixin.wxcms.service.AccountFansService;
 import org.springframework.stereotype.Service;

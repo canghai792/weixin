@@ -18,7 +18,7 @@
  */
 package com.zzsoft.weixin.wxcms.service.impl;
 
-import com.zzsoft.weixin.wxcms.domain.SysUser;
+import com.zzsoft.weixin.dao.domain.SysUser;
 import com.zzsoft.weixin.wxcms.mapper.SysUserDao;
 import com.zzsoft.weixin.wxcms.service.SysUserService;
 import org.springframework.stereotype.Service;

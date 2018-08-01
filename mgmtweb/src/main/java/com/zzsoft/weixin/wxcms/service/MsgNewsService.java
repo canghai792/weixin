@@ -18,8 +18,8 @@
  */
 package com.zzsoft.weixin.wxcms.service;
 
-import com.zzsoft.weixin.wxcms.domain.MediaFiles;
-import com.zzsoft.weixin.wxcms.domain.MsgNews;
+import com.zzsoft.weixin.dao.domain.MediaFiles;
+import com.zzsoft.weixin.dao.domain.MsgNews;
 
 import java.util.List;
 

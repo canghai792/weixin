@@ -1,5 +1,5 @@
 /*
- * FileName：TplMsgTextDao.java 
+ * FileName：MediaFilesDao.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,9 +16,9 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.mapper;
+package com.zzsoft.weixin.dao.mapper;
 
-import com.zzsoft.weixin.wxcms.domain.TplMsgText;
+import com.zzsoft.weixin.dao.domain.MediaFiles;
 
 import java.util.List;
 
@@ -28,19 +28,34 @@ import java.util.List;
  * @version 2.0
  * @date 2018-04-17 10:54:58
  */
-public interface TplMsgTextDao {
+public interface MediaFilesDao {
 
-	public TplMsgText getById(String id);
-
-	public List<TplMsgText> getTplMsgTextByPage(TplMsgText searchEntity);
-
-	public List<TplMsgText> getTplMsgTextList(TplMsgText searchEntity);
-
-	public void add(TplMsgText entity);
-
-	public void update(TplMsgText entity);
-
-	public void delete(TplMsgText entity);
-
-	public TplMsgText getByBaseId(String baseid);
+	public void add(MediaFiles entity);
+	
+	public List<MediaFiles> getMediaFileList();
+	
+	/**
+	 *  分页
+	 * @param entity
+	 * @return
+	 */
+	public List<MediaFiles> getMediaListByPage(MediaFiles entity);
+	
+	/**
+	 * 删除
+	 * @param id
+	 */
+	public void deleteByMediaId(String mediaId);
+	/**
+	 * 获取单条数据
+	 * @param mediaId
+	 * @return
+	 */
+	public MediaFiles getFileByMediaId(String mediaId);
+	/**
+	 * 条件查询
+	 * @param mediaId
+	 * @return
+	 */
+	public MediaFiles getFileBySou(MediaFiles entity);
 }

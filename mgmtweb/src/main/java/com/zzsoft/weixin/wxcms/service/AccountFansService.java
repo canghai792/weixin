@@ -18,7 +18,7 @@
  */
 package com.zzsoft.weixin.wxcms.service;
 
-import com.zzsoft.weixin.wxcms.domain.AccountFans;
+import com.zzsoft.weixin.dao.domain.AccountFans;
 
 import java.util.List;
 

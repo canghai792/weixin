@@ -16,9 +16,9 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.mapper;
+package com.zzsoft.weixin.dao.mapper;
 
-import com.zzsoft.weixin.wxcms.domain.AccountFans;
+import com.zzsoft.weixin.dao.domain.AccountFans;
 
 import java.util.List;
 

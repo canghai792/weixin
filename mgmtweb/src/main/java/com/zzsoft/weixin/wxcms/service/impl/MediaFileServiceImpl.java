@@ -1,7 +1,7 @@
 package com.zzsoft.weixin.wxcms.service.impl;
 
-import com.zzsoft.weixin.wxcms.domain.MediaFiles;
-import com.zzsoft.weixin.wxcms.domain.MsgBase;
+import com.zzsoft.weixin.dao.domain.MediaFiles;
+import com.zzsoft.weixin.dao.domain.MsgBase;
 import com.zzsoft.weixin.wxcms.mapper.MediaFilesDao;
 import com.zzsoft.weixin.wxcms.mapper.MsgBaseDao;
 import com.zzsoft.weixin.wxcms.service.MediaFileService;

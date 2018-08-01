@@ -4,9 +4,9 @@
  * @author hermit
  * @date 2018-04-17 10:54:58
  */
-package com.zzsoft.weixin.wxcms.mapper;
+package com.zzsoft.weixin.dao.mapper;
 
-import com.zzsoft.weixin.wxcms.domain.UserTag;
+import com.zzsoft.weixin.dao.domain.UserTag;
 
 import java.util.List;
 

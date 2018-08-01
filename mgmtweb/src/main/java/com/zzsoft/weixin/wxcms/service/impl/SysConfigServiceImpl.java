@@ -18,7 +18,7 @@
  */
 package com.zzsoft.weixin.wxcms.service.impl;
 
-import com.zzsoft.weixin.wxcms.domain.SysConfig;
+import com.zzsoft.weixin.dao.domain.SysConfig;
 import com.zzsoft.weixin.wxcms.mapper.SysConfigDao;
 import com.zzsoft.weixin.wxcms.service.SysConfigService;
 import org.springframework.stereotype.Service;

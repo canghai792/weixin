@@ -1,5 +1,5 @@
 /*
- * FileName：AccountDao.java 
+ * FileName：MsgTextDao.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,9 +16,9 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.mapper;
+package com.zzsoft.weixin.dao.mapper;
 
-import com.zzsoft.weixin.wxcms.domain.Account;
+import com.zzsoft.weixin.dao.domain.MsgText;
 
 import java.util.List;
 
@@ -28,23 +28,23 @@ import java.util.List;
  * @version 2.0
  * @date 2018-04-17 10:54:58
  */
+public interface MsgTextDao {
 
-public interface AccountDao {
+	public MsgText getById(String id);
 
-	public Account getById(Long id);
+	public List<MsgText> getMsgTextByPage(MsgText searchEntity);
+
+	public List<MsgText> getMsgTextList(MsgText searchEntity);
+
+	public void add(MsgText entity);
+
+	public void update(MsgText entity);
+
+	public void delete(MsgText entity);
+
+	public MsgText getRandomMsg(String inputCode);
 	
-	public Account getByAccount(String account);
-	
-	public Account getSingleAccount();
+	public MsgText getRandomMsg2();
 
-	public List<Account> listForPage(Account searchEntity);
-
-	public void add(Account entity);
-
-	public void update(Account entity);
-
-	public void delete(Account entity);
-
-
-
+	public MsgText getByBaseId(String baseid);
 }

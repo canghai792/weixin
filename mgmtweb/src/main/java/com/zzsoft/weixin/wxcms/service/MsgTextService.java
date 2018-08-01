@@ -18,7 +18,7 @@
  */
 package com.zzsoft.weixin.wxcms.service;
 
-import com.zzsoft.weixin.wxcms.domain.MsgText;
+import com.zzsoft.weixin.dao.domain.MsgText;
 
 import java.util.List;
 

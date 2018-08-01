@@ -12,6 +12,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="commonhttp" />
     <orderEntry type="module" module-name="core" />
+    <orderEntry type="module" module-name="dao" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.5.RELEASE" level="project" />

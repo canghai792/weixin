@@ -21,7 +21,7 @@ package com.zzsoft.weixin.wxcms.ctrl;
 import com.zzsoft.weixin.core.common.BaseCtrl;
 import com.zzsoft.weixin.core.exception.BusinessException;
 import com.zzsoft.weixin.core.util.AjaxResult;
-import com.zzsoft.weixin.wxcms.domain.MsgText;
+import com.zzsoft.weixin.dao.domain.MsgText;
 import com.zzsoft.weixin.wxcms.service.MsgBaseService;
 import com.zzsoft.weixin.wxcms.service.MsgTextService;
 import org.springframework.beans.factory.annotation.Autowired;

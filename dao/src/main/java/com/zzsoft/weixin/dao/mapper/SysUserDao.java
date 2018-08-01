@@ -1,5 +1,5 @@
 /*
- * FileName：MsgTextDao.java 
+ * FileName：SysUserDao.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,11 +16,9 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.mapper;
+package com.zzsoft.weixin.dao.mapper;
 
-import com.zzsoft.weixin.wxcms.domain.MsgText;
-
-import java.util.List;
+import com.zzsoft.weixin.dao.domain.SysUser;
 
 /**
  *
@@ -28,23 +26,25 @@ import java.util.List;
  * @version 2.0
  * @date 2018-04-17 10:54:58
  */
-public interface MsgTextDao {
+public interface SysUserDao {
 
-	public MsgText getById(String id);
-
-	public List<MsgText> getMsgTextByPage(MsgText searchEntity);
-
-	public List<MsgText> getMsgTextList(MsgText searchEntity);
-
-	public void add(MsgText entity);
-
-	public void update(MsgText entity);
-
-	public void delete(MsgText entity);
-
-	public MsgText getRandomMsg(String inputCode);
-	
-	public MsgText getRandomMsg2();
-
-	public MsgText getByBaseId(String baseid);
+	/**
+	 * 根据用户名密码查询
+	 * @param sysUser
+	 * @return
+	 */
+    public SysUser getSysUser(SysUser sysUser);
+    
+	/**
+	 * 根据用户名密码查询
+	 * @param userId
+	 * @return
+	 */
+    public SysUser getSysUserById(String userId);
+    
+    /**
+     * 修改登录密码
+     * @param sysUser
+     */
+    public void updateLoginPwd(SysUser sysUser);
 }

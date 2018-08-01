@@ -18,8 +18,8 @@
  */
 package com.zzsoft.weixin.wxcms.service.impl;
 
-import com.zzsoft.weixin.wxcms.domain.AccountMenu;
-import com.zzsoft.weixin.wxcms.domain.AccountMenuGroup;
+import com.zzsoft.weixin.dao.domain.AccountMenu;
+import com.zzsoft.weixin.dao.domain.AccountMenuGroup;
 import com.zzsoft.weixin.wxcms.mapper.AccountMenuDao;
 import com.zzsoft.weixin.wxcms.mapper.AccountMenuGroupDao;
 import com.zzsoft.weixin.wxcms.service.AccountMenuGroupService;

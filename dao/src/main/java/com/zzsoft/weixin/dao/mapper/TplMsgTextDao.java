@@ -1,5 +1,5 @@
 /*
- * FileName：ImgResourceDao.java 
+ * FileName：TplMsgTextDao.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,9 +16,9 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.mapper;
+package com.zzsoft.weixin.dao.mapper;
 
-import com.zzsoft.weixin.wxcms.domain.ImgResource;
+import com.zzsoft.weixin.dao.domain.TplMsgText;
 
 import java.util.List;
 
@@ -28,34 +28,19 @@ import java.util.List;
  * @version 2.0
  * @date 2018-04-17 10:54:58
  */
+public interface TplMsgTextDao {
 
-public interface ImgResourceDao {
-	
-	/**
-	 * 分页查询
-	 * @param entity
-	 * @return
-	 */
-	public List<ImgResource> getImgListByPage(ImgResource entity);
-	/**
-	 * 获取图片信息
-	 * @param id
-	 * @return
-	 */
-	public ImgResource getImgById(String id);
-	
-	/**
-	 * 创建资源
-	 * @param img
-	 * @return
-	 */
-	public void add(ImgResource img);
-	
-	/**
-	 * 删除中间表记录
-	 * @param otherId
-	 * @return
-	 */
-	public void deleteByMediaId(String otherId);
-	
+	public TplMsgText getById(String id);
+
+	public List<TplMsgText> getTplMsgTextByPage(TplMsgText searchEntity);
+
+	public List<TplMsgText> getTplMsgTextList(TplMsgText searchEntity);
+
+	public void add(TplMsgText entity);
+
+	public void update(TplMsgText entity);
+
+	public void delete(TplMsgText entity);
+
+	public TplMsgText getByBaseId(String baseid);
 }

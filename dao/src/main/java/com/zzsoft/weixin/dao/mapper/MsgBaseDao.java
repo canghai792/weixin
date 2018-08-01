@@ -1,5 +1,5 @@
 /*
- * FileName：MsgArticleDao.java 
+ * FileName：MsgBaseDao.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,9 +16,11 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxcms.mapper;
+package com.zzsoft.weixin.dao.mapper;
 
-import com.zzsoft.weixin.wxcms.domain.MsgArticle;
+import com.zzsoft.weixin.dao.domain.MsgBase;
+import com.zzsoft.weixin.dao.domain.MsgNews;
+import com.zzsoft.weixin.dao.domain.MsgText;
 
 import java.util.List;
 
@@ -28,19 +30,27 @@ import java.util.List;
  * @version 2.0
  * @date 2018-04-17 10:54:58
  */
-public interface MsgArticleDao {
 
-	List<MsgArticle> getByNewsId(int id);
+public interface MsgBaseDao {
+
+	public MsgBase getById(String id);
+
+	public List<MsgBase> listForPage(MsgBase searchEntity);
+
+	public List<MsgNews> listMsgNewsByBaseId(String[] ids);
 	
-	MsgArticle getById(int id);
+	public MsgText getMsgTextByBaseId(String id);
 	
-	void add(MsgArticle article);
+	public MsgText getMsgTextBySubscribe();
 	
-	void insertByBatch(List<MsgArticle> articles);
+	public MsgText getMsgTextByInputCode(String inputcode);
 	
-	void update(MsgArticle article);
+	public Integer add(MsgBase entity);
+
+	public void update(MsgBase entity);
 	
-	void delete(int id);
-	
-	void deleteByBatch(int id);
+	public void updateInputcode(MsgBase entity);
+
+	public void delete(MsgBase entity);
+
 }

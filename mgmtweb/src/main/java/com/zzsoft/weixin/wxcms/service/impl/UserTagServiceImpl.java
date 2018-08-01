@@ -7,7 +7,7 @@ import com.wxmp.wxapi.process.HttpMethod;
 import com.wxmp.wxapi.process.MpAccount;
 import com.wxmp.wxapi.process.WxApi;
 import com.wxmp.wxapi.process.WxApiClient;
-import com.zzsoft.weixin.wxcms.domain.UserTag;
+import com.zzsoft.weixin.dao.domain.UserTag;
 import com.zzsoft.weixin.wxcms.mapper.UserTagDao;
 import com.zzsoft.weixin.wxcms.service.UserTagService;
 import org.apache.log4j.Logger;

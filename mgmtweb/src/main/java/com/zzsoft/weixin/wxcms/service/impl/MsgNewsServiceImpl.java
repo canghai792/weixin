@@ -19,10 +19,10 @@
 package com.zzsoft.weixin.wxcms.service.impl;
 
 import com.wxmp.wxapi.process.MsgType;
-import com.zzsoft.weixin.wxcms.domain.MediaFiles;
-import com.zzsoft.weixin.wxcms.domain.MsgArticle;
-import com.zzsoft.weixin.wxcms.domain.MsgBase;
-import com.zzsoft.weixin.wxcms.domain.MsgNews;
+import com.zzsoft.weixin.dao.domain.MediaFiles;
+import com.zzsoft.weixin.dao.domain.MsgArticle;
+import com.zzsoft.weixin.dao.domain.MsgBase;
+import com.zzsoft.weixin.dao.domain.MsgNews;
 import com.zzsoft.weixin.wxcms.mapper.MediaFilesDao;
 import com.zzsoft.weixin.wxcms.mapper.MsgArticleDao;
 import com.zzsoft.weixin.wxcms.mapper.MsgBaseDao;
@@ -124,7 +124,7 @@ public class MsgNewsServiceImpl implements MsgNewsService{
 	}
 
 	/* (non-Javadoc)
-	 * @see com.zzsoft.weixin.wxcms.service.MsgNewsService#updateMediaId(com.zzsoft.weixin.wxcms.domain.MsgNews)
+	 * @see com.zzsoft.weixin.wxcms.service.MsgNewsService#updateMediaId(com.zzsoft.weixin.dao.domain.MsgNews)
 	 */
 	@Override
 	public int updateMediaId(MsgNews entity) {
@@ -229,7 +229,7 @@ public class MsgNewsServiceImpl implements MsgNewsService{
 	}
 
 	/* (non-Javadoc)
-	 * @see com.zzsoft.weixin.wxcms.service.MsgNewsService#addMoreNews(com.zzsoft.weixin.wxcms.domain.MsgNews)
+	 * @see com.zzsoft.weixin.wxcms.service.MsgNewsService#addMoreNews(com.zzsoft.weixin.dao.domain.MsgNews)
 	 */
 	@Transactional
 	@Override
@@ -311,7 +311,7 @@ public class MsgNewsServiceImpl implements MsgNewsService{
 	}
 
 	/* (non-Javadoc)修改单图文
-	 * @see com.zzsoft.weixin.wxcms.service.MsgNewsService#updateSingleNews(com.zzsoft.weixin.wxcms.domain.MsgNews)
+	 * @see com.zzsoft.weixin.wxcms.service.MsgNewsService#updateSingleNews(com.zzsoft.weixin.dao.domain.MsgNews)
 	 */
 	@Transactional
 	@Override

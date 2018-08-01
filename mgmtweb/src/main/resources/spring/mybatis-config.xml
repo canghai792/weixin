@@ -17,7 +17,7 @@
 
 	<!-- 实体起别名 -->
 	<typeAliases>
-		<package name="com.zzsoft.weixin.wxcms.domain"/>
+		<package name="com.zzsoft.weixin.dao.domain"/>
 	</typeAliases>
 
 	<!-- 配置分页插件 -->

@@ -1,6 +1,6 @@
 package com.zzsoft.weixin.wxcms.service;
 
-import com.zzsoft.weixin.wxcms.domain.MediaFiles;
+import com.zzsoft.weixin.dao.domain.MediaFiles;
 
 import java.util.List;
 

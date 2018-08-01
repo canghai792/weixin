@@ -20,8 +20,8 @@ package com.zzsoft.weixin.wxcms.service.impl;
 
 import com.zzsoft.weixin.core.util.StringUtil;
 import com.wxmp.wxapi.process.MsgType;
-import com.zzsoft.weixin.wxcms.domain.MsgBase;
-import com.zzsoft.weixin.wxcms.domain.MsgText;
+import com.zzsoft.weixin.dao.domain.MsgBase;
+import com.zzsoft.weixin.dao.domain.MsgText;
 import com.zzsoft.weixin.wxcms.mapper.MsgBaseDao;
 import com.zzsoft.weixin.wxcms.mapper.MsgTextDao;
 import com.zzsoft.weixin.wxcms.service.MsgTextService;
