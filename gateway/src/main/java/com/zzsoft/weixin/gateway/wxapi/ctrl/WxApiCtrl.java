@@ -23,16 +23,16 @@ import com.alibaba.fastjson.JSONObject;
 import com.wxmp.core.common.BaseCtrl;
 import com.wxmp.core.exception.WxErrorException;
 import com.wxmp.core.spring.JsonView;
-import com.wxmp.core.util.AjaxResult;
-import com.wxmp.core.util.DateUtil;
-import com.wxmp.core.util.UploadUtil;
-import com.wxmp.core.util.wx.SignUtil;
-import com.wxmp.wxapi.process.*;
+import com.zzsoft.weixin.core.util.AjaxResult;
+import com.zzsoft.weixin.core.util.DateUtil;
+import com.zzsoft.weixin.core.util.UploadUtil;
+import com.zzsoft.weixin.core.util.wx.SignUtil;
+import com.zzsoft.weixin.wxapi.process.*;
 import com.wxmp.wxapi.service.MyService;
-import com.wxmp.wxapi.vo.*;
-import com.wxmp.wxcms.domain.AccountFans;
-import com.wxmp.wxcms.domain.MsgNews;
-import com.wxmp.wxcms.domain.MsgText;
+import com.zzsoft.weixin.wxapi.vo.*;
+import com.zzsoft.weixin.dao.domain.AccountFans;
+import com.zzsoft.weixin.dao.domain.MsgNews;
+import com.zzsoft.weixin.dao.domain.MsgText;
 import com.wxmp.wxcms.service.MsgNewsService;
 import com.wxmp.wxcms.service.MsgTextService;
 import org.apache.commons.lang.StringUtils;
@@ -439,7 +439,7 @@ public class WxApiCtrl extends BaseCtrl{
 	 *//*
 
 	@RequestMapping(value = "/wxipay_noity")
-	public @ResponseBody com.wxmp.core.util.wx.HTTPResultXml wxipay_noity(@RequestBody String requestBodyXml) {
+	public @ResponseBody com.zzsoft.weixin.core.util.wx.HTTPResultXml wxipay_noity(@RequestBody String requestBodyXml) {
 		log.info("-------------------------------------wxipay_noity-----<0>-------------------requestBodyXml:"+requestBodyXml);
 
 		String jsonStr = requestBodyXml;
@@ -447,7 +447,7 @@ public class WxApiCtrl extends BaseCtrl{
 
 		Map map = new HashMap();
 		try {
-			map = com.wxmp.core.util.wx.TenpayUtil2.doXMLParseByDom4j(jsonStr);
+			map = com.zzsoft.weixin.core.util.wx.TenpayUtil2.doXMLParseByDom4j(jsonStr);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -466,7 +466,7 @@ public class WxApiCtrl extends BaseCtrl{
 		}
 
 
-		com.wxmp.core.util.wx.HTTPResultXml httpResultXml=new com.wxmp.core.util.wx.HTTPResultXml();
+		com.zzsoft.weixin.core.util.wx.HTTPResultXml httpResultXml=new com.zzsoft.weixin.core.util.wx.HTTPResultXml();
 		httpResultXml.setReturn_code(return_code);
 		httpResultXml.setReturn_msg(return_msg);
 

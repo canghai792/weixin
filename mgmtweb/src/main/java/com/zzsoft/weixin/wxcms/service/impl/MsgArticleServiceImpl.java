@@ -20,8 +20,8 @@ package com.zzsoft.weixin.wxcms.service.impl;
 
 import com.zzsoft.weixin.dao.domain.MsgArticle;
 import com.zzsoft.weixin.dao.domain.MsgNews;
-import com.zzsoft.weixin.wxcms.mapper.MsgArticleDao;
-import com.zzsoft.weixin.wxcms.mapper.MsgNewsDao;
+import com.zzsoft.weixin.dao.mapper.MsgArticleDao;
+import com.zzsoft.weixin.dao.mapper.MsgNewsDao;
 import com.zzsoft.weixin.wxcms.service.MsgArticleService;
 import org.springframework.stereotype.Service;
 

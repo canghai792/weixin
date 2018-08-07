@@ -1,56 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0fb4225-f1f2-4d26-b71c-4d9389475ff3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_27.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_8_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/src/main/resources/log4j.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/src/main/resources/spring-test-config.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/src/main/resources/test.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/src/test/java/com/zzsoft/test/wexin/gateway/CoreControlTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/test.iml" />
+    <list default="true" id="a0fb4225-f1f2-4d26-b71c-4d9389475ff3" name="Default" comment="haha">
+      <change beforePath="" afterPath="$PROJECT_DIR$/appweb/appweb.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/appweb/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/util/WxMemoryCacheClient.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/interceptor/OAuth2RequestParamHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/interceptor/WxOAuth2Interceptor.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/AccessToken.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/ErrCode.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/HttpMethod.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/JSTicket.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/MediaType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/MpAccount.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/MsgType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/MsgXmlUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/OAuthAccessToken.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/OAuthScope.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/WxApi.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/WxApiClient.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/WxMemoryCacheClient.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/WxMessageBuilder.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/WxSign.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/service/MyService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/service/impl/MyServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/Article.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/Image.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/Matchrule.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/Material.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MaterialArticle.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MaterialCount.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MaterialItem.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgRequest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponse.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponseImage.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponseMusic.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponseNews.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponseText.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponseVideo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponseVoice.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/Music.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/TemplateMessage.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/Video.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/Voice.java" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/commonhttp.iml" afterPath="$PROJECT_DIR$/commonhttp/commonhttp.iml" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/src/main/java/com/zzsoft/commonhttp/httpclient/impl/AbstractHttpPerformer.java" afterPath="$PROJECT_DIR$/commonhttp/src/main/java/com/zzsoft/commonhttp/httpclient/impl/AbstractHttpPerformer.java" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/ROOT.jar" afterPath="$PROJECT_DIR$/commonhttp/target/ROOT.jar" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/CookieSavingPolicy.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/CookieSavingPolicy.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/HttpPerformer.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/HttpPerformer.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/cookie/CookieBean.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/cookie/CookieBean.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/cookie/CookiePersistence.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/cookie/CookiePersistence.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/cookie/DefaultCookieSavingPolicy.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/cookie/DefaultCookieSavingPolicy.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/impl/AbstractHttpPerformer$1.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/impl/AbstractHttpPerformer$1.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/impl/AbstractHttpPerformer.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/impl/AbstractHttpPerformer.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/impl/DefaultHttpPerformer.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/impl/DefaultHttpPerformer.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/impl/JsonHttpPerformer.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/impl/JsonHttpPerformer.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/impl/XmlHttpPerformer.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/impl/XmlHttpPerformer.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/util/Constants.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/util/Constants.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/util/Dictionary.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/util/Dictionary.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/util/HttpClientSetting.class" afterPath="$PROJECT_DIR$/commonhttp/target/classes/com/zzsoft/commonhttp/httpclient/util/HttpClientSetting.class" />
-      <change beforePath="$PROJECT_DIR$/commonhttp/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/commonhttp/target/maven-archiver/pom.properties" />
       <change beforePath="$PROJECT_DIR$/core/core.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
-      <change beforePath="$PROJECT_DIR$/gateway/gateway.iml" afterPath="$PROJECT_DIR$/gateway/gateway.iml" />
-      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" afterPath="$PROJECT_DIR$/gateway/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/CoreController.java" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/CoreController.java" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/gateway/src/main/resources/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/gateway/src/main/resources/spring-mvc.xml" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/wx.properties" afterPath="$PROJECT_DIR$/gateway/src/main/resources/wx.properties" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/wxProcess.properties" afterPath="$PROJECT_DIR$/gateway/src/main/resources/wxProcess.properties" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/gateway/target/classes/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/com/zzsoft/weixin/gateway/wxapi/ctrl/CoreController.class" afterPath="$PROJECT_DIR$/gateway/target/classes/com/zzsoft/weixin/gateway/wxapi/ctrl/CoreController.class" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/gateway/target/classes/spring-mvc.xml" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/wx.properties" afterPath="$PROJECT_DIR$/gateway/target/classes/wx.properties" />
-      <change beforePath="$PROJECT_DIR$/mgmtweb/mgmtweb.iml" afterPath="$PROJECT_DIR$/mgmtweb/mgmtweb.iml" />
-      <change beforePath="$PROJECT_DIR$/parent/parent.iml" afterPath="$PROJECT_DIR$/parent/parent.iml" />
-      <change beforePath="$PROJECT_DIR$/parent/pom.xml" afterPath="$PROJECT_DIR$/parent/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" afterPath="$PROJECT_DIR$/core/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/common/AppDefineInitService.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/common/AppDefineInitService.java" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/listener/InitListener.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/listener/InitListener.java" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/page/Page.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/page/Page.java" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/util/SessionUtil.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/util/SessionUtil.java" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/util/wx/WxUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/domain/Account.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/domain/Account.java" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/util/WxUtil.java" afterPath="$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/util/WxUtil.java" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/WxApiCtrl.java" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/WxApiCtrl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountCtrl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountCtrl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountMenuCtrl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountMenuCtrl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/ImgResourceCtrl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/ImgResourceCtrl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/MediaFilesCtrl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/MediaFilesCtrl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/MsgNewsCtrl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/MsgNewsCtrl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/UserTagCtrl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/UserTagCtrl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/WxCmsCtrl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/WxCmsCtrl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/UserTagService.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/UserTagService.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/AccountFansServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/AccountFansServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/AccountMenuGroupServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/AccountMenuGroupServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/AccountMenuServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/AccountMenuServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/AccountServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/AccountServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/ImgResourceServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/ImgResourceServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MediaFileServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MediaFileServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MsgArticleServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MsgArticleServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MsgBaseServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MsgBaseServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MsgNewsServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MsgNewsServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MsgTextServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MsgTextServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/SysConfigServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/SysConfigServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/SysUserServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/SysUserServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/TplMsgTextServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/TplMsgTextServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/UserTagServiceImpl.java" afterPath="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/UserTagServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -63,6 +91,8 @@
     <ignored path="$PROJECT_DIR$/core/target/" />
     <ignored path="$PROJECT_DIR$/mgmtweb/target/" />
     <ignored path="$PROJECT_DIR$/test/target/" />
+    <ignored path="$PROJECT_DIR$/dao/target/" />
+    <ignored path="$PROJECT_DIR$/appweb/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +101,40 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="AccountFansCtrl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountFansCtrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImgResourceCtrl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/ImgResourceCtrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountMenuCtrl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountMenuCtrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1088">
+              <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -91,16 +154,51 @@
       <find>getAesKey</find>
       <find>InternalResourceView</find>
       <find>WxMemoryCacheClient</find>
+      <find>com.wxmp.wxapi.process.WxMemoryCacheClient</find>
+      <find>getById</find>
+      <find>listForPage</find>
+      <find>com.zzsoft.weixin.wxcms.domain</find>
+      <find>MsgNewsDao</find>
+      <find>MpAccount</find>
+      <find>com.zzsoft.weixin.wxcms.mapper.</find>
+      <find>MsgType</find>
+      <find>MsgResponseVideo</find>
+      <find>com.wxmp.wxapi.vo.Matchrule</find>
+      <find>com.wxmp.wxapi.process.MsgType</find>
+      <find>com.zzsoft.weixin.core.util.wx.WxUtil</find>
+      <find>com.zzsoft.weixin.dao.util.wx.WxUtil</find>
+      <find>com.wxmp.wxapi.vo</find>
+      <find>com.wxmp.wxcms.domain</find>
+      <find>com.wxmp.core.util</find>
+      <find>com.wxmp.wxapi.process</find>
     </findStrings>
     <replaceStrings>
       <replace>com.zzsoft.weixin.core</replace>
       <replace>com.zzsoft.weixin.wxcms</replace>
       <replace>com.zzsoft.weixin.gatway.handler</replace>
       <replace>com.zzsoft.weixin.gateway.wxapi.util</replace>
+      <replace>com.zzsoft.weixin.wxcms.todo.WxMemoryCacheClient</replace>
+      <replace>com.zzsoft.weixin.dao.mapper.</replace>
+      <replace>com.zzsoft.weixin.wxapi.vo.Matchrule</replace>
+      <replace>com.zzsoft.weixin.wxapi.process.MsgType</replace>
+      <replace>com.zzsoft.weixin.dao.util.wx.WxUtil</replace>
+      <replace>com.zzsoft.weixin.dao.util.WxUtil</replace>
+      <replace>com.zzsoft.weixin.wxapi.vo</replace>
+      <replace>com.zzsoft.weixin.dao.domain</replace>
+      <replace>com.zzsoft.weixin.core.util</replace>
+      <replace>com.zzsoft.weixin.wxapi.process</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\git respositories\weixin\mgmtweb\src\main\webapp</dir>
+      <dir>D:\git respositories\weixin\dao\src\main\java\com\zzsoft\weixin\dao\mapper</dir>
+      <dir>D:\git respositories\weixin\mgmtweb</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -110,19 +208,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/commonhttp/pom.xml" />
-        <option value="$PROJECT_DIR$/aaaa/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/gateway/wxapi/ctrl/WxApiCtrl.java" />
-        <option value="D:/application/apache-maven-3.3.9/conf/settings_hnrcu.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/common/util/ValidateUtil.java" />
-        <option value="$PROJECT_DIR$/core/pom.xml" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/common/common/BaseCtrl.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/interceptor/AuthInterceptor.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/common/Configuration.java" />
         <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/mapper/AccountDao.java" />
         <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/domain/AccountFans.java" />
-        <option value="$PROJECT_DIR$/mgmtweb/pom.xml" />
         <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/MsgNewsCtrl.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/TemplateMessageController.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/WxApiCtrl.java" />
@@ -148,6 +237,28 @@
         <option value="$PROJECT_DIR$/test/src/test/java/com/zzsoft/test/wexin/gateway/CoreControlTest.java" />
         <option value="$PROJECT_DIR$/test/src/main/resources/test.properties" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/CoreController.java" />
+        <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/todo/MpAccount.java" />
+        <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/domain/Account.java" />
+        <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountCtrl.java" />
+        <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/todo/WxMemoryCacheClient.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/mapper/MediaFilesDao.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/domain/MsgArticle.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/mapper/AccountDao.java" />
+        <option value="$PROJECT_DIR$/mgmtweb/pom.xml" />
+        <option value="$PROJECT_DIR$/dao/pom.xml" />
+        <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/AccountMenuGroupService.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/domain/MpAccount.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/domain/Account.java" />
+        <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MsgNewsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/ctrl/WxApiCtrl.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/util/WxUtil.java" />
+        <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountMenuCtrl.java" />
+        <option value="$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/ImgResourceCtrl.java" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/WxMessageBuilder.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/util/WxMemoryCacheClient.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/interceptor/WxOAuth2Interceptor.java" />
+        <option value="$PROJECT_DIR$/appweb/pom.xml" />
       </list>
     </option>
   </component>
@@ -207,9 +318,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,11 +325,81 @@
               <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
               <item name="weixin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="appweb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="appweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="appweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="mgmtweb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="mgmtweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="mgmtweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="mgmtweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="mgmtweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wxcms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="mgmtweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wxcms" type="462c0819:PsiDirectoryNode" />
+              <item name="ctrl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,16 +411,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zzsoft.weixin.core.util" />
+      <recent name="com.zzsoft.weixin.dao.domain" />
+      <recent name="com.zzsoft.weixin.dao.util" />
+      <recent name="com.zzsoft.weixin.wxcms.todo" />
       <recent name="com.zzsoft.test.wexin.gateway" />
-      <recent name="gateway" />
-      <recent name="com.zzsoft.gateway.wxapi.ctrl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git respositories\weixin\core\src\main\java\com\zzsoft\weixin\wxapi" />
+      <recent name="D:\git respositories\weixin\dao\src\main\java\com\zzsoft\weixin\dao\domain" />
+      <recent name="D:\git respositories\weixin\dao\src\main\resources" />
+      <recent name="D:\git respositories\weixin\dao\src\main\java\com\zzsoft\weixin\dao\mapper" />
       <recent name="D:\git respositories\weixin\test\src\main\resources" />
-      <recent name="D:\git respositories\weixin\gateway\src\main\resources" />
-      <recent name="D:\git respositories\weixin\gateway\src\test\resources" />
-      <recent name="D:\git respositories\weixin\gateway\src\main\java\com\zzsoft\weixin\gateway\wxapi\util" />
-      <recent name="D:\git respositories\weixin\gateway\src\main\java\com\zzsoft\weixin\gateway\wxapi\service\impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -544,7 +724,42 @@
       <option name="project" value="LOCAL" />
       <updated>1530842493816</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="haha">
+      <created>1531997379817</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531997379817</updated>
+    </task>
+    <task id="LOCAL-00004" summary="haha">
+      <created>1533110660009</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533110660009</updated>
+    </task>
+    <task id="LOCAL-00005" summary="haha">
+      <created>1533110707936</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1533110707936</updated>
+    </task>
+    <task id="LOCAL-00006" summary="haha">
+      <created>1533111011761</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533111011761</updated>
+    </task>
+    <task id="LOCAL-00007" summary="haha">
+      <created>1533111985030</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533111985030</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -593,18 +808,17 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879817" sideWeight="0.50429183" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26387316" sideWeight="0.50429183" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4813137" sideWeight="0.49570817" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.4967811" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3025751" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22961374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -616,6 +830,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -636,428 +851,144 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gateway/src/test/resources/test.properties" />
-    <entry file="file://$PROJECT_DIR$/gateway/src/test/resources/spring-test-config.xml" />
-    <entry file="file://$PROJECT_DIR$/gateway/src/test/java/com/zzsoft/weixin/gateway/wxapi/CoreControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/pom.xml">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/domain/MediaFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/mapper/MediaFilesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/IndexCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/util/wx/WxUtil.java" />
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/todo/MpAccount.java" />
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/domain/MpAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/domain/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/MsgNewsCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="92" column="62" lean-forward="false" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/MsgNewsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1311">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/AccountMenuGroupService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/test/java/gateway/CoreControlTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/src/main/java/com/zzsoft/wexin/gateway/CoreControlTest.java" />
-    <entry file="jar://D:/maven/repository_csii/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/org/apache/http/client/methods/HttpPost.class">
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/ImgResourceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        <state relative-caret-position="690">
+          <caret line="49" column="5" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commonhttp/src/main/java/com/zzsoft/commonhttp/httpclient/impl/DefaultHttpPerformer.java">
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/AccountFansService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        <state relative-caret-position="575">
+          <caret line="44" column="25" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/main/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/domain/AccountFans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repository_csii/com/github/binarywang/weixin-java-common/3.0.0/weixin-java-common-3.0.0-sources.jar!/me/chanjar/weixin/common/bean/WxCardApiSignature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repository_csii/com/github/binarywang/weixin-java-mp/3.0.0/weixin-java-mp-3.0.0.jar!/me/chanjar/weixin/mp/constant/WxMpEventConstants.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-718">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repository_csii/com/github/binarywang/weixin-java-common/3.0.0/weixin-java-common-3.0.0-sources.jar!/me/chanjar/weixin/common/api/WxErrorExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repository_csii/com/github/binarywang/weixin-java-common/3.0.0/weixin-java-common-3.0.0-sources.jar!/me/chanjar/weixin/common/bean/menu/WxMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven/repository_csii/com/github/binarywang/weixin-java-common/3.0.0/weixin-java-common-3.0.0-sources.jar!/me/chanjar/weixin/common/api/WxConsts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonhttp/src/main/java/com/zzsoft/commonhttp/httpclient/util/HttpClientSetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="78" column="29" lean-forward="false" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonhttp/src/main/java/com/zzsoft/commonhttp/httpclient/impl/AbstractHttpPerformer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="200" column="21" lean-forward="false" selection-start-line="200" selection-start-column="21" selection-end-line="201" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repository_csii/org/testng/testng/6.8.7/testng-6.8.7.jar!/org/testng/internal/MethodInvocationHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/main/resources/spring-test-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="31" selection-end-column="87" />
+          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parent/pom.xml">
+    <entry file="file://$PROJECT_DIR$/dao/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="299">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/maven/repository_csii/com/github/binarywang/weixin-java-mp/3.0.0/weixin-java-mp-3.0.0.jar!/me/chanjar/weixin/mp/api/WxMpConfigStorage.class">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/mapper/AccountDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/wx.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/wxProcess.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/wxPay.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65619">
-          <caret line="2938" column="25" lean-forward="false" selection-start-line="2938" selection-start-column="25" selection-end-line="2938" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonhttp/src/main/java/com/zzsoft/commonhttp/httpclient/util/Dictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/main/resources/test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repository_csii/com/github/binarywang/weixin-java-mp/3.0.0/weixin-java-mp-3.0.0.jar!/me/chanjar/weixin/mp/api/WxMpService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="52" column="26" lean-forward="false" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-          <folding>
-            <marker date="1528253034926" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528253034926" expanded="false" signature="148:665" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repository_csii/com/github/binarywang/weixin-java-mp/3.0.0/weixin-java-mp-3.0.0.jar!/me/chanjar/weixin/mp/api/impl/WxMpServiceBaseImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="181" column="30" lean-forward="false" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
-          <folding>
-            <marker date="1528253034926" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528253034926" expanded="false" signature="153:2377" ph="..." />
-            <marker date="1528253034926" expanded="true" signature="4175:4182" ph="{}" />
-            <marker date="1528253034926" expanded="true" signature="4268:4577" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="4638:4688" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="4769:5797" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="5884:6569" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="6630:6680" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="6749:7145" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="7253:7448" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="7544:7834" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="7920:8203" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="8296:8648" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="8741:9028" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="9133:9382" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="9488:10056" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="10132:10561" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="10623:11097" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="11185:11330" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="11397:11566" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="11645:11745" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="11823:11922" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="12028:13191" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="13305:14937" ph="{...}" />
-            <marker date="1528253034926" expanded="false" signature="14990:15001" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="15031:15037" ph=" }" />
-            <marker date="1528253034926" expanded="true" signature="15112:15195" ph="{...}" />
-            <marker date="1528253034926" expanded="false" signature="15254:15265" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="15306:15312" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="15365:15376" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="15411:15417" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="15462:15473" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="15497:15503" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="15556:15567" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="15595:15601" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="15646:15657" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="15681:15687" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="15732:15743" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="15767:15773" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="15824:15835" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="15858:15864" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="15913:15924" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="15950:15956" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16001:16012" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="16036:16042" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16095:16106" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="16134:16140" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16199:16210" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="16239:16245" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16292:16303" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="16328:16334" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16393:16404" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="16435:16441" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16502:16513" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="16545:16551" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16600:16611" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="16637:16643" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16690:16701" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="16726:16732" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16789:16800" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="16830:16836" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16877:16888" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="16900:16906" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="16965:16976" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="17007:17013" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="17074:17085" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="17116:17122" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="17195:17206" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="17245:17251" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="17312:17323" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="17354:17360" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="17421:17432" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="17463:17469" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="17531:17542" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="17571:17577" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="17644:17655" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="17690:17696" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="17757:17768" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="17799:17805" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="17869:17880" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="17913:17919" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="17992:18003" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="18042:18048" ph=" }" />
-            <marker date="1528253034926" expanded="true" signature="18129:18186" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="18269:18330" ph="{...}" />
-            <marker date="1528253034926" expanded="false" signature="18397:18408" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="18443:18449" ph=" }" />
-            <marker date="1528253034926" expanded="false" signature="18513:18524" ph=" { " />
-            <marker date="1528253034926" expanded="false" signature="18557:18563" ph=" }" />
-            <marker date="1528253034926" expanded="true" signature="18643:18702" ph="{...}" />
-            <marker date="1528253034926" expanded="true" signature="18785:18846" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repository_csii/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/view/AbstractUrlBasedView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repository_csii/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/view/InternalResourceView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="79" column="17" lean-forward="false" selection-start-line="77" selection-start-column="38" selection-end-line="79" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/util/ReturnModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/util/GenericReturnModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repository_csii/com/github/binarywang/weixin-java-mp/3.0.0/weixin-java-mp-3.0.0.jar!/me/chanjar/weixin/mp/bean/result/WxMpUser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7385">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/GenericController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/CoreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="121" column="26" lean-forward="false" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/test/java/com/zzsoft/test/wexin/gateway/CoreControlTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repository_csii/com/github/binarywang/weixin-java-mp/3.0.0/weixin-java-mp-3.0.0.jar!/me/chanjar/weixin/mp/api/WxMpInMemoryConfigStorage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-920">
-          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/config/WxPayConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/config/MainConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/config/MenuConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="120" column="53" lean-forward="false" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/PaymentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2752">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/TemplateMessageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-935">
-          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zzsoft/weixin/gateway/wxapi/ctrl/WxApiCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1829">
-          <caret line="169" column="27" lean-forward="true" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/domain/MsgArticle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/domain/AccountMenuGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/domain/ImgResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="67" column="41" lean-forward="false" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/domain/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="23">
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1065,42 +996,256 @@
     <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/AccountService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="31" />
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/impl/AccountServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponseNews.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/WxSign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponseText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/ctrl/WxApiCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1679">
+          <caret line="55" column="39" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/WxApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/AccessToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponseVideo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MaterialCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/vo/MsgRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding>
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/Long.java">
+    <entry file="file://$PROJECT_DIR$/core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        <state relative-caret-position="414">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/mapper/AccountDao.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/WxMessageBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="-736">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2698#2707#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/WxMemoryCacheClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3128">
+          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/util/WxMemoryCacheClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/interceptor/WxOAuth2Interceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/JSTicket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/core/util/qiniu/QiniuResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/interceptor/OAuth2RequestParamHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="84" column="13" lean-forward="true" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/process/OAuthAccessToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/service/MsgBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/service/MyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/zzsoft/weixin/wxapi/service/impl/MyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3979">
+          <caret line="76" column="15" lean-forward="true" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zzsoft/weixin/dao/util/WxUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2231">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appweb/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgmtweb/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountFansCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/ImgResourceCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mgmtweb/src/main/java/com/zzsoft/weixin/wxcms/ctrl/AccountMenuCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1246">
-          <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="29" />
+        <state relative-caret-position="-1088">
+          <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1157,7 +1302,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>test</last-edited>
+          <last-edited>appweb</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -19,11 +19,11 @@
 package com.zzsoft.weixin.wxcms.service.impl;
 
 import com.zzsoft.weixin.core.util.StringUtil;
-import com.wxmp.wxapi.process.MsgType;
+import com.zzsoft.weixin.wxapi.process.MsgType;
 import com.zzsoft.weixin.dao.domain.MsgBase;
 import com.zzsoft.weixin.dao.domain.TplMsgText;
-import com.zzsoft.weixin.wxcms.mapper.MsgBaseDao;
-import com.zzsoft.weixin.wxcms.mapper.TplMsgTextDao;
+import com.zzsoft.weixin.dao.mapper.MsgBaseDao;
+import com.zzsoft.weixin.dao.mapper.TplMsgTextDao;
 import com.zzsoft.weixin.wxcms.service.TplMsgTextService;
 import org.springframework.stereotype.Service;
 

@@ -18,7 +18,6 @@
  */
 package com.zzsoft.weixin.dao.domain;
 
-import com.zzsoft.weixin.wxcms.todo.MpAccount;
 import lombok.Data;
 
 import java.util.Date;

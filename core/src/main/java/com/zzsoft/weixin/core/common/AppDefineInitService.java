@@ -19,8 +19,8 @@
 package com.zzsoft.weixin.core.common;
 
 import com.zzsoft.weixin.core.spring.SpringBeanDefineService;
-import com.wxmp.wxapi.process.WxMemoryCacheClient;
-import com.wxmp.wxcms.domain.Account;
+import com.zzsoft.weixin.wxcms.todo.WxMemoryCacheClient;
+import com.zzsoft.weixin.dao.domain.Account;
 import com.wxmp.wxcms.mapper.AccountDao;
 
 import javax.annotation.Resource;

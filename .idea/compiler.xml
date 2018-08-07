@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="appweb" />
         <module name="commonhttp" />
         <module name="core" />
+        <module name="dao" />
         <module name="gateway" />
         <module name="mgmtweb" />
         <module name="test" />
@@ -15,8 +17,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="aaaa" target="1.5" />
+      <module name="appweb" target="1.5" />
       <module name="commonhttp" target="1.5" />
       <module name="core" target="1.5" />
+      <module name="dao" target="1.5" />
       <module name="gateway" target="1.8" />
       <module name="mgmtweb" target="1.5" />
       <module name="parent" target="1.5" />

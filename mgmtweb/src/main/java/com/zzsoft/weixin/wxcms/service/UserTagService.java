@@ -6,7 +6,7 @@
  */
 package com.zzsoft.weixin.wxcms.service;
 
-import com.wxmp.wxapi.process.MpAccount;
+import com.zzsoft.weixin.wxapi.process.MpAccount;
 import com.zzsoft.weixin.dao.domain.UserTag;
 
 import java.util.List;

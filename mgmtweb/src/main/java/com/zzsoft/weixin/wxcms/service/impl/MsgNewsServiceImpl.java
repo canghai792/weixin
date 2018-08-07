@@ -18,15 +18,15 @@
  */
 package com.zzsoft.weixin.wxcms.service.impl;
 
-import com.wxmp.wxapi.process.MsgType;
+import com.zzsoft.weixin.wxapi.process.MsgType;
 import com.zzsoft.weixin.dao.domain.MediaFiles;
 import com.zzsoft.weixin.dao.domain.MsgArticle;
 import com.zzsoft.weixin.dao.domain.MsgBase;
 import com.zzsoft.weixin.dao.domain.MsgNews;
-import com.zzsoft.weixin.wxcms.mapper.MediaFilesDao;
-import com.zzsoft.weixin.wxcms.mapper.MsgArticleDao;
-import com.zzsoft.weixin.wxcms.mapper.MsgBaseDao;
-import com.zzsoft.weixin.wxcms.mapper.MsgNewsDao;
+import com.zzsoft.weixin.dao.mapper.MediaFilesDao;
+import com.zzsoft.weixin.dao.mapper.MsgArticleDao;
+import com.zzsoft.weixin.dao.mapper.MsgBaseDao;
+import com.zzsoft.weixin.dao.mapper.MsgNewsDao;
 import com.zzsoft.weixin.wxcms.service.MsgNewsService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;

@@ -19,7 +19,7 @@
 package com.zzsoft.weixin.wxcms.service.impl;
 
 import com.zzsoft.weixin.dao.domain.Account;
-import com.zzsoft.weixin.wxcms.mapper.AccountDao;
+import com.zzsoft.weixin.dao.mapper.AccountDao;
 import com.zzsoft.weixin.wxcms.service.AccountService;
 import org.springframework.stereotype.Service;
 

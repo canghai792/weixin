@@ -2,8 +2,8 @@ package com.zzsoft.weixin.wxcms.service.impl;
 
 import com.zzsoft.weixin.dao.domain.MediaFiles;
 import com.zzsoft.weixin.dao.domain.MsgBase;
-import com.zzsoft.weixin.wxcms.mapper.MediaFilesDao;
-import com.zzsoft.weixin.wxcms.mapper.MsgBaseDao;
+import com.zzsoft.weixin.dao.mapper.MediaFilesDao;
+import com.zzsoft.weixin.dao.mapper.MsgBaseDao;
 import com.zzsoft.weixin.wxcms.service.MediaFileService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -20,8 +20,8 @@ package com.zzsoft.weixin.wxcms.service.impl;
 
 import com.zzsoft.weixin.dao.domain.AccountMenu;
 import com.zzsoft.weixin.dao.domain.AccountMenuGroup;
-import com.zzsoft.weixin.wxcms.mapper.AccountMenuDao;
-import com.zzsoft.weixin.wxcms.mapper.AccountMenuGroupDao;
+import com.zzsoft.weixin.dao.mapper.AccountMenuDao;
+import com.zzsoft.weixin.dao.mapper.AccountMenuGroupDao;
 import com.zzsoft.weixin.wxcms.service.AccountMenuGroupService;
 import org.springframework.stereotype.Service;
 

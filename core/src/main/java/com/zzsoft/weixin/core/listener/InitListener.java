@@ -20,9 +20,9 @@ package com.zzsoft.weixin.core.listener;
 
 import com.zzsoft.weixin.core.spring.SpringContextHolder;
 import com.zzsoft.weixin.core.util.CacheUtils;
-import com.wxmp.wxapi.process.WxMemoryCacheClient;
-import com.wxmp.wxcms.domain.Account;
-import com.wxmp.wxcms.domain.SysConfig;
+import com.zzsoft.weixin.wxcms.todo.WxMemoryCacheClient;
+import com.zzsoft.weixin.dao.domain.Account;
+import com.zzsoft.weixin.dao.domain.SysConfig;
 import com.wxmp.wxcms.service.AccountService;
 import com.wxmp.wxcms.service.SysConfigService;
 

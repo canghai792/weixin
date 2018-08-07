@@ -20,13 +20,13 @@ package com.zzsoft.weixin.wxcms.service.impl;
 
 import com.zzsoft.weixin.core.common.Constants;
 import com.zzsoft.weixin.core.util.CommonUtil;
-import com.wxmp.wxapi.process.MediaType;
+import com.zzsoft.weixin.wxapi.process.MediaType;
 import com.zzsoft.weixin.dao.domain.ImgResource;
 import com.zzsoft.weixin.dao.domain.MediaFiles;
 import com.zzsoft.weixin.dao.domain.MsgBase;
-import com.zzsoft.weixin.wxcms.mapper.ImgResourceDao;
-import com.zzsoft.weixin.wxcms.mapper.MediaFilesDao;
-import com.zzsoft.weixin.wxcms.mapper.MsgBaseDao;
+import com.zzsoft.weixin.dao.mapper.ImgResourceDao;
+import com.zzsoft.weixin.dao.mapper.MediaFilesDao;
+import com.zzsoft.weixin.dao.mapper.MsgBaseDao;
 import com.zzsoft.weixin.wxcms.service.ImgResourceService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
