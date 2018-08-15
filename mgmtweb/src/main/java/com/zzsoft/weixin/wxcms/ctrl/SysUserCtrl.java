@@ -21,7 +21,7 @@ package com.zzsoft.weixin.wxcms.ctrl;
 import com.zzsoft.weixin.core.common.BaseCtrl;
 import com.zzsoft.weixin.core.util.AjaxResult;
 import com.zzsoft.weixin.core.util.MD5Util;
-import com.zzsoft.weixin.core.util.SessionUtil;
+import com.zzsoft.weixin.wxcms.util.SessionUtil;
 import com.zzsoft.weixin.dao.domain.SysUser;
 import com.zzsoft.weixin.wxcms.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;

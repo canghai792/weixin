@@ -17,6 +17,7 @@
         <module>test</module>
         <module>dao</module>
         <module>appweb</module>
+        <module>service</module>
     </modules>
 
 

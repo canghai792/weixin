@@ -16,16 +16,17 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxapi.process;
+package com.zzsoft.weixin.service;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.zzsoft.weixin.dao.domain.MsgNews;
+import com.zzsoft.weixin.dao.domain.MsgText;
+import com.zzsoft.weixin.wxapi.process.MsgType;
 import com.zzsoft.weixin.wxapi.vo.Article;
 import com.zzsoft.weixin.wxapi.vo.MsgRequest;
 import com.zzsoft.weixin.wxapi.vo.MsgResponseNews;
 import com.zzsoft.weixin.wxapi.vo.MsgResponseText;
-import com.zzsoft.weixin.dao.domain.MsgNews;
-import com.zzsoft.weixin.dao.domain.MsgText;
 import org.apache.commons.lang.StringUtils;
 
 import java.util.ArrayList;

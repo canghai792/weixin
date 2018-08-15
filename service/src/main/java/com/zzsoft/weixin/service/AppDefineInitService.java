@@ -1,5 +1,5 @@
 /*
- * FileName：MpAccount.java 
+ * FileName：AppDefineInitService.java 
  * <p>
  * Copyright (c) 2017-2020, <a href="http://www.webcsn.com">hermit (794890569@qq.com)</a>.
  * <p>
@@ -16,31 +16,26 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.dao.domain;
+package com.zzsoft.weixin.service;
 
-import lombok.Data;
+import com.zzsoft.weixin.dao.mapper.*;
+import com.zzsoft.weixin.core.spring.SpringBeanDefineService;
+import com.zzsoft.weixin.dao.domain.Account;
+import com.zzsoft.weixin.wxapi.process.WxMemoryCacheClient;
 
-import java.io.Serializable;
+import javax.annotation.Resource;
 
 /**
- * 微信公众号信息
+ * 系统启动时自动加载，把公众号信息加入到缓存中
  */
-@Data
-public class MpAccount implements Serializable{
-	private static final long serialVersionUID = -6315146640254918207L;
+public class AppDefineInitService implements SpringBeanDefineService {
+
+	@Resource
+	private AccountDao accountDao;
 	
-	private String account;//账号
-	private String appid;//appid
-	private String appsecret;//appsecret
-	private String url;//验证时用的url
-	private String token;//token
-	//ext
-	private Integer msgcount;//自动回复消息条数;默认是5条
-
-	public Integer getMsgcount() {
-		if(msgcount == null)
-			msgcount = 5;//默认5条
-		return msgcount;
+	public void initApplicationCacheData() {
+		Account account = accountDao.getSingleAccount();
+		WxMemoryCacheClient.addMpAccount(account);
 	}
-
+	
 }

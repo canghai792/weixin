@@ -12,19 +12,21 @@
         <module name="dao" />
         <module name="gateway" />
         <module name="mgmtweb" />
+        <module name="service" />
         <module name="test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="aaaa" target="1.5" />
-      <module name="appweb" target="1.5" />
-      <module name="commonhttp" target="1.5" />
-      <module name="core" target="1.5" />
-      <module name="dao" target="1.5" />
+      <module name="appweb" target="1.8" />
+      <module name="commonhttp" target="1.8" />
+      <module name="core" target="1.8" />
+      <module name="dao" target="1.8" />
       <module name="gateway" target="1.8" />
-      <module name="mgmtweb" target="1.5" />
-      <module name="parent" target="1.5" />
-      <module name="test" target="1.5" />
+      <module name="mgmtweb" target="1.8" />
+      <module name="parent" target="1.8" />
+      <module name="service" target="1.8" />
+      <module name="test" target="1.8" />
       <module name="weixin" target="1.5" />
     </bytecodeTargetLevel>
   </component>

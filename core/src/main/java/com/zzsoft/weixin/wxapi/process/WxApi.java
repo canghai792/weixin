@@ -20,9 +20,9 @@ package com.zzsoft.weixin.wxapi.process;
 
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
-import com.wxmp.core.common.Identities;
-import com.wxmp.core.exception.WxError;
-import com.wxmp.core.exception.WxErrorException;
+import com.zzsoft.weixin.core.common.Identities;
+import com.zzsoft.weixin.core.exception.WxError;
+import com.zzsoft.weixin.core.exception.WxErrorException;
 import com.zzsoft.weixin.core.util.DateUtil;
 import com.zzsoft.weixin.core.util.HttpClientUtils;
 import com.zzsoft.weixin.core.util.MyTrustManager;

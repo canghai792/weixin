@@ -21,7 +21,7 @@ package com.zzsoft.weixin.wxcms.ctrl;
 import com.zzsoft.weixin.core.common.BaseCtrl;
 import com.zzsoft.weixin.core.util.AjaxResult;
 import com.zzsoft.weixin.dao.util.WxUtil;
-import com.zzsoft.weixin.wxcms.todo.WxMemoryCacheClient;
+import com.zzsoft.weixin.wxapi.process.WxMemoryCacheClient;
 import com.zzsoft.weixin.dao.domain.Account;
 import com.zzsoft.weixin.wxcms.service.AccountService;
 import org.apache.commons.collections.CollectionUtils;

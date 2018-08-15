@@ -16,7 +16,7 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxapi.interceptor;
+package com.zzsoft.weixin.wxcms.interceptor;
 
 import org.apache.commons.lang.StringUtils;
 

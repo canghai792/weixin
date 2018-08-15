@@ -18,7 +18,7 @@
  */
 package com.zzsoft.weixin.wxapi.process;
 
-import com.wxmp.core.common.Identities;
+import com.zzsoft.weixin.core.common.Identities;
 import com.zzsoft.weixin.core.util.wx.SignUtil;
 
 import java.util.SortedMap;

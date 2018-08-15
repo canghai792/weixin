@@ -16,15 +16,18 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxapi.interceptor;
+package com.zzsoft.weixin.wxcms.interceptor;
 
 import com.zzsoft.weixin.core.util.HttpUtil;
-import com.zzsoft.weixin.wxapi.process.*;
+import com.zzsoft.weixin.wxapi.process.MpAccount;
+import com.zzsoft.weixin.wxapi.process.OAuthScope;
+import com.zzsoft.weixin.wxapi.process.WxApi;
+import com.zzsoft.weixin.wxapi.process.WxMemoryCacheClient;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
-
+import com.zzsoft.weixin.service.WxApiClient;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 

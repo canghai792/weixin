@@ -54,7 +54,7 @@
     <aop:aspectj-autoproxy expose-proxy="true" proxy-target-class="true"/>
     <!-- 拦截器-->
     <mvc:interceptors>
-        <bean class="com.zzsoft.weixin.core.interceptor.AuthInterceptor">
+        <bean class="com.zzsoft.weixin.wxcms.interceptor.AuthInterceptor">
             <property name="allowUrls">
                 <list>
                     <value>/</value>

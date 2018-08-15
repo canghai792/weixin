@@ -16,7 +16,7 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.core.util;
+package com.zzsoft.weixin.wxcms.util;
 
 import com.zzsoft.weixin.dao.domain.SysUser;
 import org.apache.log4j.Logger;

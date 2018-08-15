@@ -16,18 +16,20 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxapi.service.impl;
+package com.zzsoft.weixin.service.impl;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.wxmp.core.exception.WxErrorException;
-import com.zzsoft.weixin.core.util.wx.WxUtil;
+import com.zzsoft.weixin.core.exception.WxErrorException;
+import com.zzsoft.weixin.service.MyService;
+import com.zzsoft.weixin.dao.mapper.*;
+import com.zzsoft.weixin.dao.util.WxUtil;
+import com.zzsoft.weixin.dao.domain.*;
 import com.zzsoft.weixin.wxapi.process.*;
-import com.wxmp.wxapi.service.MyService;
+import com.zzsoft.weixin.service.WxMessageBuilder;
+import com.zzsoft.weixin.service.WxApiClient;
 import com.zzsoft.weixin.wxapi.vo.Matchrule;
 import com.zzsoft.weixin.wxapi.vo.MsgRequest;
-import com.zzsoft.weixin.dao.domain.*;
-import com.wxmp.wxcms.mapper.*;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;

@@ -11,29 +11,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zzsoft.weixin</groupId>
-    <artifactId>core</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>service</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>cpdetector</groupId>
-            <artifactId>cpdetector</artifactId>
-            <version>1.0.10</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/cpdetector-1.0.7.jar</systemPath>
+            <groupId>com.zzsoft.weixin</groupId>
+            <artifactId>core</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>chardet</groupId>
-            <artifactId>chardet</artifactId>
-            <version>1.0.10</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/chardet-1.0.jar</systemPath>
-        </dependency>
-        <!--<dependency>
             <groupId>com.zzsoft.weixin</groupId>
             <artifactId>dao</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>-->
+        </dependency>
     </dependencies>
 
 </project>

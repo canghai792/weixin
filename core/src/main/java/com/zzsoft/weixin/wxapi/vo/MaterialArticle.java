@@ -19,7 +19,7 @@
 package com.zzsoft.weixin.wxapi.vo;
 
 
-import com.wxmp.core.page.Page;
+import com.zzsoft.weixin.core.page.Page;
 import lombok.Data;
 
 import java.io.Serializable;

@@ -18,13 +18,13 @@
  */
 package com.zzsoft.weixin.core.listener;
 
+import com.zzsoft.weixin.wxcms.service.AccountService;
+import com.zzsoft.weixin.wxcms.service.SysConfigService;
 import com.zzsoft.weixin.core.spring.SpringContextHolder;
 import com.zzsoft.weixin.core.util.CacheUtils;
-import com.zzsoft.weixin.wxcms.todo.WxMemoryCacheClient;
 import com.zzsoft.weixin.dao.domain.Account;
 import com.zzsoft.weixin.dao.domain.SysConfig;
-import com.wxmp.wxcms.service.AccountService;
-import com.wxmp.wxcms.service.SysConfigService;
+import com.zzsoft.weixin.wxapi.process.WxMemoryCacheClient;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

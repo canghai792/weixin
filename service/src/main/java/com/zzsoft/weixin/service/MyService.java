@@ -16,13 +16,13 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.wxapi.service;
+package com.zzsoft.weixin.service;
 
 import com.alibaba.fastjson.JSONObject;
-import com.wxmp.core.exception.WxErrorException;
+import com.zzsoft.weixin.core.exception.WxErrorException;
+import com.zzsoft.weixin.dao.domain.AccountFans;
 import com.zzsoft.weixin.wxapi.process.MpAccount;
 import com.zzsoft.weixin.wxapi.vo.MsgRequest;
-import com.zzsoft.weixin.dao.domain.AccountFans;
 
 /**
  * 我的微信服务接口，主要用于结合自己的业务和微信接口

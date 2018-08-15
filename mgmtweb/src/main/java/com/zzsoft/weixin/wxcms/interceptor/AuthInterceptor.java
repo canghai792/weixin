@@ -16,9 +16,9 @@
  * limitations under the License.
  *
  */
-package com.zzsoft.weixin.core.interceptor;
+package com.zzsoft.weixin.wxcms.interceptor;
 
-import com.zzsoft.weixin.core.util.SessionUtil;
+import com.zzsoft.weixin.wxcms.util.SessionUtil;
 import org.apache.log4j.Logger;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 

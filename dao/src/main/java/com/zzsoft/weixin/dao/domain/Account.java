@@ -19,7 +19,7 @@
 package com.zzsoft.weixin.dao.domain;
 
 import lombok.Data;
-
+import com.zzsoft.weixin.wxapi.process.MpAccount;
 import java.util.Date;
 
 /**

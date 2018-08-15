@@ -18,7 +18,7 @@
  */
 package com.zzsoft.weixin.core.page;
 
-import com.zzsoft.weixin.wxcms.todo.WxMemoryCacheClient;
+import com.zzsoft.weixin.wxapi.process.WxMemoryCacheClient;
 import lombok.Data;
 
 import java.io.Serializable;
