@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <!--  the code template created by wxmp-generator @author hermit @version 2.0 @date 2018-04-17 10:43:21 -->
-<mapper namespace="com.zzsoft.weixin.wxcms.mapper.MsgNewsDao">
+<mapper namespace="com.zzsoft.weixin.dao.mapper.MsgNewsDao">
 	
-	<resultMap type="com.zzsoft.weixin.wxcms.domain.MsgNews" id="msgNewsMap">
+	<resultMap type="com.zzsoft.weixin.dao.domain.MsgNews" id="msgNewsMap">
 	    <id property="id" column="id"/>
         <result property="multType" column="mult_type"/>
         <result property="title" column="title"/>
@@ -21,9 +21,9 @@
         <result property="createTime" column="create_time"/>
 	    <!-- 配置一对多关联映射 -->
 	    <collection property="articles" column="id" fetchType="lazy"
-	    	ofType="com.zzsoft.weixin.wxcms.domain.MsgArticle"
+	    	ofType="com.zzsoft.weixin.dao.domain.MsgArticle"
 	    	javaType="ArrayList"
-	    	select="com.zzsoft.weixin.wxcms.mapper.MsgArticleDao.getByNewsId">
+	    	select="com.zzsoft.weixin.dao.mapper.MsgArticleDao.getByNewsId">
 	    	
 	        <id property="arId" column="ar_id"/>
 		    <result property="title" column="title" />
@@ -41,12 +41,12 @@
 	    </collection>
 	</resultMap>
 	
-	<select id="listForPage" parameterType="com.zzsoft.weixin.wxcms.domain.MsgNews" resultType="com.zzsoft.weixin.wxcms.domain.MsgNews">
+	<select id="listForPage" parameterType="com.zzsoft.weixin.dao.domain.MsgNews" resultType="com.zzsoft.weixin.dao.domain.MsgNews">
 		SELECT * FROM wxcms_msg_news t , wxcms_msg_base b WHERE t.base_id = b.id
 		ORDER BY t.ID 
 	</select>
 
-	<select id="getWebNewsListByPage" parameterType="com.zzsoft.weixin.wxcms.domain.MsgNews" resultMap="msgNewsMap">
+	<select id="getWebNewsListByPage" parameterType="com.zzsoft.weixin.dao.domain.MsgNews" resultMap="msgNewsMap">
 		SELECT  t.* FROM wxcms_msg_news t
 		<where>
 			
@@ -74,26 +74,26 @@
 		SELECT * FROM wxcms_msg_news WHERE id = #{id}
 	</select>
 	
-	<select id="getRandomMsgByContent" resultType="com.zzsoft.weixin.wxcms.domain.MsgNews">
+	<select id="getRandomMsgByContent" resultType="com.zzsoft.weixin.dao.domain.MsgNews">
 		SELECT t.* from wxcms_msg_news t , wxcms_msg_base b
 		WHERE b.input_code like CONCAT('%','${param1}','%' ) and t.base_id = b.id 
 		ORDER BY RAND() LIMIT #{param2}
 	</select>
 	
-	<select id="getRandomMsg" parameterType="java.lang.Integer" resultType="com.zzsoft.weixin.wxcms.domain.MsgNews">
+	<select id="getRandomMsg" parameterType="java.lang.Integer" resultType="com.zzsoft.weixin.dao.domain.MsgNews">
 		SELECT t.* from wxcms_msg_news t , wxcms_msg_base b
 		WHERE t.base_id = b.id 
 		ORDER BY RAND() LIMIT #{num}
 	</select>
 	
-	<select id="getMsgNewsByIds" resultType="com.zzsoft.weixin.wxcms.domain.MsgNews" >
+	<select id="getMsgNewsByIds" resultType="com.zzsoft.weixin.dao.domain.MsgNews" >
     	SELECT * FROM wxcms_msg_news WHERE id IN
 		<foreach collection="array" index="index" item="item" open="(" separator="," close=")">  
 		 #{item}  
 		</foreach>  
 	</select>
 
-	<insert id="add" parameterType="com.zzsoft.weixin.wxcms.domain.MsgNews" flushCache="true" useGeneratedKeys="true" keyProperty="id">
+	<insert id="add" parameterType="com.zzsoft.weixin.dao.domain.MsgNews" flushCache="true" useGeneratedKeys="true" keyProperty="id">
 		INSERT INTO wxcms_msg_news (title,AUTHOR,brief,
 		description,pic_path,
 		show_pic,url,from_url,media_id,account,create_time,base_id)
@@ -101,23 +101,23 @@
 		#{showpic},#{url},#{fromurl},#{mediaId},#{account},#{createTime},#{baseId})
 	</insert>
 
-	<update id="updateUrl" parameterType="com.zzsoft.weixin.wxcms.domain.MsgNews" flushCache="true">
+	<update id="updateUrl" parameterType="com.zzsoft.weixin.dao.domain.MsgNews" flushCache="true">
 		UPDATE wxcms_msg_news SET URL = #{url} WHERE id = #{id}
 	</update>
 	
-	<update id="update" parameterType="com.zzsoft.weixin.wxcms.domain.MsgNews" flushCache="true">
+	<update id="update" parameterType="com.zzsoft.weixin.dao.domain.MsgNews" flushCache="true">
 		UPDATE wxcms_msg_news SET title = #{title},author = #{author},brief = #{brief},description = #{description},pic_path = #{picpath},url = #{url},thumb_media_id = #{thumbMediaId},from_url = #{fromurl},show_pic = #{showpic} WHERE id = #{id}
 	</update>
 
-	<delete id="delete" parameterType="com.zzsoft.weixin.wxcms.domain.MsgNews" >
+	<delete id="delete" parameterType="com.zzsoft.weixin.dao.domain.MsgNews" >
 		DELETE FROM wxcms_msg_news WHERE id = #{id}
 	</delete>
     
-    <select id="getByBaseId" parameterType="java.lang.String" resultType="com.zzsoft.weixin.wxcms.domain.MsgNews">
+    <select id="getByBaseId" parameterType="java.lang.String" resultType="com.zzsoft.weixin.dao.domain.MsgNews">
 		SELECT * FROM wxcms_msg_news WHERE base_id = #{baseid}
 	</select>
 	
-	<update id="updateMediaId" parameterType="com.zzsoft.weixin.wxcms.domain.MsgNews" flushCache="true">
+	<update id="updateMediaId" parameterType="com.zzsoft.weixin.dao.domain.MsgNews" flushCache="true">
 		UPDATE wxcms_msg_news
 		SET
 		   media_id = #{mediaId} 
@@ -125,7 +125,7 @@
 	</update>
    
     <!-- 添加图文信息 -->
-    <insert id="addNews" parameterType="com.zzsoft.weixin.wxcms.domain.MsgNews" useGeneratedKeys="true" keyProperty="id">
+    <insert id="addNews" parameterType="com.zzsoft.weixin.dao.domain.MsgNews" useGeneratedKeys="true" keyProperty="id">
 		INSERT INTO wxcms_msg_news
 		       (TITLE,
 		         AUTHOR,
@@ -160,7 +160,7 @@
 	</insert>
 	
 	<!-- 查询图文信息  -->
-	<select id="getMsgNewsList"  resultType="com.zzsoft.weixin.wxcms.domain.MsgNews">
+	<select id="getMsgNewsList"  resultType="com.zzsoft.weixin.dao.domain.MsgNews">
 		SELECT   id,
 		         title,
 		         author,
@@ -185,7 +185,7 @@
 	</delete>
 	
 	<!-- 更新媒体素材信息 -->
-	<update id="updateNews" parameterType="com.zzsoft.weixin.wxcms.domain.MsgNews" flushCache="true">
+	<update id="updateNews" parameterType="com.zzsoft.weixin.dao.domain.MsgNews" flushCache="true">
 		UPDATE wxcms_msg_news
 		SET TITLE = #{title},
 		    AUTHOR = #{author},

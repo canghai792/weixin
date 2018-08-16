@@ -12,7 +12,7 @@
         <mvc:interceptors>
 			<mvc:interceptor>
 	        	<mvc:mapping path="/**/*.html"/>
-	        	<bean class="com.wxmp.wxapi.interceptor.WxOAuth2Interceptor">
+	        	<bean class="com.zzsoft.weixin.wxcms.interceptor.WxOAuth2Interceptor">
 	        		<property name="includes">
 	        			<list> 
 							<value>/wxweb/sendmsg.html</value>

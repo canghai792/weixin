@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <!--  the code template created by wxmp-generator @author hermit @version 2.0 @date 2018-04-17 10:43:21 -->
-<mapper namespace="com.zzsoft.weixin.wxcms.mapper.MsgTextDao">
+<mapper namespace="com.zzsoft.weixin.dao.mapper.MsgTextDao">
 
-	<select id="getMsgTextByPage" parameterType="com.zzsoft.weixin.wxcms.domain.MsgText" resultType="com.zzsoft.weixin.wxcms.domain.MsgText">
+	<select id="getMsgTextByPage" parameterType="com.zzsoft.weixin.dao.domain.MsgText" resultType="com.zzsoft.weixin.dao.domain.MsgText">
 		SELECT b.msg_type ,b.input_code ,t.* FROM wxcms_msg_text t , wxcms_msg_base b
 		WHERE t.base_id = b.id
 		<if test="inputcode != '' and inputcode != null">
@@ -14,7 +14,7 @@
 		</if>
 		ORDER BY b.create_time DESC
 	</select>
-	<select id="getMsgTextList" parameterType="com.zzsoft.weixin.wxcms.domain.MsgText" resultType="com.zzsoft.weixin.wxcms.domain.MsgText">
+	<select id="getMsgTextList" parameterType="com.zzsoft.weixin.dao.domain.MsgText" resultType="com.zzsoft.weixin.dao.domain.MsgText">
 		SELECT b.msg_type ,b.input_code ,t.* FROM wxcms_msg_text t , wxcms_msg_base b
 		WHERE t.base_id = b.id
 		<if test="inputcode != '' and inputcode != null">
@@ -25,31 +25,31 @@
 		</if>
 		ORDER BY b.create_time DESC
 	</select>
-	<select id="getById" parameterType="java.lang.String" resultType="com.zzsoft.weixin.wxcms.domain.MsgText">
+	<select id="getById" parameterType="java.lang.String" resultType="com.zzsoft.weixin.dao.domain.MsgText">
 		SELECT * FROM wxcms_msg_text WHERE ID = #{id}
 	</select>
 	
-	<select id="getRandomMsg" parameterType="java.lang.String" resultType="com.zzsoft.weixin.wxcms.domain.MsgText">
+	<select id="getRandomMsg" parameterType="java.lang.String" resultType="com.zzsoft.weixin.dao.domain.MsgText">
 		SELECT t.* from wxcms_msg_text t , wxcms_msg_base b
 		WHERE b.input_code = #{inputCode} and t.base_id = b.id 
 		ORDER BY RAND() LIMIT 1
 	</select>
 	
-	<select id="getRandomMsg2" resultType="com.zzsoft.weixin.wxcms.domain.MsgText">
+	<select id="getRandomMsg2" resultType="com.zzsoft.weixin.dao.domain.MsgText">
 		SELECT t.* from wxcms_msg_text t , wxcms_msg_base b
 		WHERE t.base_id = b.id 
 		ORDER BY RAND() LIMIT 1
 	</select>
 
-	<insert id="add" parameterType="com.zzsoft.weixin.wxcms.domain.MsgText" flushCache="true">
+	<insert id="add" parameterType="com.zzsoft.weixin.dao.domain.MsgText" flushCache="true">
 		INSERT INTO wxcms_msg_text (TITLE, CONTENT,BASE_ID,ACCOUNT)  VALUES ( #{title},#{content},#{baseId},#{account}  )
 	</insert>
 
-	<update id="update" parameterType="com.zzsoft.weixin.wxcms.domain.MsgText" flushCache="true">
+	<update id="update" parameterType="com.zzsoft.weixin.dao.domain.MsgText" flushCache="true">
 		UPDATE wxcms_msg_text SET CONTENT = #{content},TITLE = #{title} WHERE ID = #{id}
 	</update>
 
-	<delete id="delete" parameterType="com.zzsoft.weixin.wxcms.domain.MsgText" >
+	<delete id="delete" parameterType="com.zzsoft.weixin.dao.domain.MsgText" >
 		DELETE FROM wxcms_msg_text
 		<where>
 			<if test="id != null">
@@ -61,7 +61,7 @@
 		</where>
 	</delete>
 
-	<select id="getByBaseId" parameterType="java.lang.String" resultType="com.zzsoft.weixin.wxcms.domain.MsgText">
+	<select id="getByBaseId" parameterType="java.lang.String" resultType="com.zzsoft.weixin.dao.domain.MsgText">
 		SELECT * FROM wxcms_msg_text WHERE base_id = #{baseid}
 	</select>
 </mapper>

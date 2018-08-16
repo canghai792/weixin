@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <!--  the code template created by wxmp-generator @author hermit @version 2.0 @date 2018-04-17 10:43:21 -->
-<mapper namespace="com.zzsoft.weixin.wxcms.mapper.MediaFilesDao">
+<mapper namespace="com.zzsoft.weixin.dao.mapper.MediaFilesDao">
 	<!-- 语音和视频表操作 -->
-	<resultMap type="com.zzsoft.weixin.wxcms.domain.MediaFiles" id="mediaMap">
+	<resultMap type="com.zzsoft.weixin.dao.domain.MediaFiles" id="mediaMap">
 	    <id property="id" column="id"/>
         <result property="mediaType" column="media_type"/>
         <result property="title" column="title"/>
@@ -23,7 +23,7 @@
 		SELECT * FROM wxcms_media_files WHERE media_id = #{mediaId}
 	</select>
 	<!-- 条件查询单条数据 -->
-	<select id="getFileBySou" parameterType="com.zzsoft.weixin.wxcms.domain.MediaFiles"
+	<select id="getFileBySou" parameterType="com.zzsoft.weixin.dao.domain.MediaFiles"
 		resultMap="mediaMap">
 		SELECT * FROM wxcms_media_files WHERE 
 		<where>
@@ -41,7 +41,7 @@
 		
 	</select>
 	<!-- 模糊分页 -->
-	<select id="getMediaListByPage" parameterType="com.zzsoft.weixin.wxcms.domain.MediaFiles" resultMap="mediaMap">
+	<select id="getMediaListByPage" parameterType="com.zzsoft.weixin.dao.domain.MediaFiles" resultMap="mediaMap">
 		SELECT  t.* FROM wxcms_media_files t
 		<where>
 			1=1
@@ -65,7 +65,7 @@
 		ORDER BY t.create_time desc
 	</select>
 	<!-- 添加 -->
-	<insert id="add" parameterType="com.zzsoft.weixin.wxcms.domain.MediaFiles">
+	<insert id="add" parameterType="com.zzsoft.weixin.dao.domain.MediaFiles">
 		INSERT INTO wxcms_media_files
 		 (media_type,
 		  title,

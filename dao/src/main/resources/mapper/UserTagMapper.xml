@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.zzsoft.weixin.wxcms.mapper.UserTagDao">
+<mapper namespace="com.zzsoft.weixin.dao.mapper.UserTagDao">
 
-	<select id="getUserTagListByPage" parameterType="com.zzsoft.weixin.wxcms.domain.UserTag" resultType="com.zzsoft.weixin.wxcms.domain.UserTag">
+	<select id="getUserTagListByPage" parameterType="com.zzsoft.weixin.dao.domain.UserTag" resultType="com.zzsoft.weixin.dao.domain.UserTag">
 		SELECT * FROM wxcms_user_tag
 		<trim prefix="where" prefixOverrides="and|or">
 	        1=1 
@@ -13,7 +13,7 @@
 		ORDER BY ID
 	</select>
 
-	<select id="getById" parameterType="java.lang.Integer" resultType="com.zzsoft.weixin.wxcms.domain.UserTag">
+	<select id="getById" parameterType="java.lang.Integer" resultType="com.zzsoft.weixin.dao.domain.UserTag">
 		SELECT * FROM wxcms_user_tag WHERE ID = #{id}
 	</select>
 	
@@ -21,15 +21,15 @@
 		SELECT MAX(ID) FROM wxcms_user_tag
 	</select>
 	
-	<insert id="add" parameterType="com.zzsoft.weixin.wxcms.domain.UserTag" flushCache="true" useGeneratedKeys="true" keyProperty="id">
+	<insert id="add" parameterType="com.zzsoft.weixin.dao.domain.UserTag" flushCache="true" useGeneratedKeys="true" keyProperty="id">
 		INSERT INTO wxcms_user_tag ( ID,NAME,COUNT )  VALUES ( #{id},#{name},#{count})
 	</insert>
 
-	<update id="update" parameterType="com.zzsoft.weixin.wxcms.domain.UserTag" flushCache="true">
+	<update id="update" parameterType="com.zzsoft.weixin.dao.domain.UserTag" flushCache="true">
 		UPDATE wxcms_user_tag SET NAME = #{name},COUNT = #{count},CREATE_TIME = #{createTime} WHERE ID = #{id}
 	</update>
 	
-	<delete id="delete" parameterType="com.zzsoft.weixin.wxcms.domain.UserTag" >
+	<delete id="delete" parameterType="com.zzsoft.weixin.dao.domain.UserTag" >
 		DELETE FROM wxcms_user_tag WHERE ID = #{id}
 	</delete>
 	

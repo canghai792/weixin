@@ -28,7 +28,7 @@ import com.zzsoft.weixin.core.util.PropertiesConfigUtil;
 import com.zzsoft.weixin.core.util.UploadUtil;
 import com.zzsoft.weixin.wxapi.process.MediaType;
 import com.zzsoft.weixin.wxapi.process.MpAccount;
-import com.zzsoft.weixin.wxapi.process.WxApiClient;
+import com.zzsoft.weixin.service.WxApiClient;
 import com.zzsoft.weixin.wxapi.process.WxMemoryCacheClient;
 import com.zzsoft.weixin.wxapi.vo.Material;
 import com.zzsoft.weixin.wxapi.vo.MaterialArticle;

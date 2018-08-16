@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <!--  the code template created by wxmp-generator @author hermit @version 2.0 @date 2018-04-17 10:43:21 -->
-<mapper namespace="com.zzsoft.weixin.wxcms.mapper.AccountMenuGroupDao">
+<mapper namespace="com.zzsoft.weixin.dao.mapper.AccountMenuGroupDao">
 
 
-	<select id="list" parameterType="com.zzsoft.weixin.wxcms.domain.AccountMenuGroup" resultType="com.zzsoft.weixin.wxcms.domain.AccountMenuGroup">
+	<select id="list" parameterType="com.zzsoft.weixin.dao.domain.AccountMenuGroup" resultType="com.zzsoft.weixin.dao.domain.AccountMenuGroup">
 		SELECT * FROM wxcms_account_menu_group ORDER BY ID
 	</select>
 
-	<select id="getTotalItemsCount" parameterType="com.zzsoft.weixin.wxcms.domain.AccountMenuGroup" resultType="java.lang.Integer">
+	<select id="getTotalItemsCount" parameterType="com.zzsoft.weixin.dao.domain.AccountMenuGroup" resultType="java.lang.Integer">
 		SELECT COUNT(*) FROM wxcms_account_menu_group
 	</select>
 
-	<select id="getGroupListByPage" resultType="com.zzsoft.weixin.wxcms.domain.AccountMenuGroup">
+	<select id="getGroupListByPage" resultType="com.zzsoft.weixin.dao.domain.AccountMenuGroup">
 		SELECT * FROM wxcms_account_menu_group ORDER BY create_time
 	</select>
 
-	<select id="getById" parameterType="java.lang.String" resultType="com.zzsoft.weixin.wxcms.domain.AccountMenuGroup">
+	<select id="getById" parameterType="java.lang.String" resultType="com.zzsoft.weixin.dao.domain.AccountMenuGroup">
 		SELECT * FROM wxcms_account_menu_group WHERE ID = #{id}
 	</select>
 
-	<insert id="add" parameterType="com.zzsoft.weixin.wxcms.domain.AccountMenuGroup" flushCache="true"  useGeneratedKeys="true" keyProperty="id"  >
+	<insert id="add" parameterType="com.zzsoft.weixin.dao.domain.AccountMenuGroup" flushCache="true"  useGeneratedKeys="true" keyProperty="id"  >
 		INSERT INTO wxcms_account_menu_group ( NAME,ENABLE,ID,CREATE_TIME )  VALUES ( #{name},#{enable},#{id},#{createTime} )
 	</insert>
 	
@@ -32,15 +32,15 @@
 		UPDATE wxcms_account_menu_group SET ENABLE = 1 WHERE ID = #{id}
 	</update>
 
-	<update id="update" parameterType="com.zzsoft.weixin.wxcms.domain.AccountMenuGroup" flushCache="true">
+	<update id="update" parameterType="com.zzsoft.weixin.dao.domain.AccountMenuGroup" flushCache="true">
 		UPDATE wxcms_account_menu_group SET NAME = #{name},ENABLE = #{enable},CREATE_TIME = #{createTime} WHERE ID = #{id}
 	</update>
 
-	<delete id="deleteAllMenu" parameterType="com.zzsoft.weixin.wxcms.domain.AccountMenuGroup" >
+	<delete id="deleteAllMenu" parameterType="com.zzsoft.weixin.dao.domain.AccountMenuGroup" >
 		DELETE FROM wxcms_account_menu WHERE GID = #{id}
 	</delete>
 
-	<delete id="delete" parameterType="com.zzsoft.weixin.wxcms.domain.AccountMenuGroup" >
+	<delete id="delete" parameterType="com.zzsoft.weixin.dao.domain.AccountMenuGroup" >
 		DELETE FROM wxcms_account_menu_group WHERE ID = #{id}
 	</delete>
     <!--根据id删除菜单组  -->

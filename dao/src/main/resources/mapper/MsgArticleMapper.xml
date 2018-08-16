@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <!--  the code template created by wxmp-generator @author hermit @version 2.0 @date 2018-04-17 10:43:21 -->
-<mapper namespace="com.zzsoft.weixin.wxcms.mapper.MsgArticleDao">
-	<resultMap type="com.zzsoft.weixin.wxcms.domain.MsgArticle" id="msgArticleMap">
+<mapper namespace="com.zzsoft.weixin.dao.mapper.MsgArticleDao">
+	<resultMap type="com.zzsoft.weixin.dao.domain.MsgArticle" id="msgArticleMap">
 	    <id property="arId" column="ar_id"/>
 	    <result property="title" column="title" />
 	    <result property="author" column="author" />
@@ -18,16 +18,16 @@
 	    <result property="newsIndex" column="news_index" />
 	</resultMap>
 	
-    <select id="getByNewsId" parameterType="int" resultType="com.zzsoft.weixin.wxcms.domain.MsgArticle">
+    <select id="getByNewsId" parameterType="int" resultType="com.zzsoft.weixin.dao.domain.MsgArticle">
 		SELECT * FROM wxcms_article WHERE NEWS_ID = #{newsId}
 	</select>
 
-	<select id="getById" parameterType="int" resultType="com.zzsoft.weixin.wxcms.domain.MsgArticle">
+	<select id="getById" parameterType="int" resultType="com.zzsoft.weixin.dao.domain.MsgArticle">
 		SELECT * FROM wxcms_article WHERE ID = #{id}
 	</select>
 	
 
-	<insert id="add" parameterType="com.zzsoft.weixin.wxcms.domain.MsgArticle" flushCache="true" useGeneratedKeys="true" keyProperty="arId">
+	<insert id="add" parameterType="com.zzsoft.weixin.dao.domain.MsgArticle" flushCache="true" useGeneratedKeys="true" keyProperty="arId">
 		INSERT INTO wxcms_article (
 		TITLE,
 		AUTHOR,
@@ -86,7 +86,7 @@
 			#{item.newsIndex})
        </foreach>
     </insert>
-	<update id="update" parameterType="com.zzsoft.weixin.wxcms.domain.MsgArticle" flushCache="true">
+	<update id="update" parameterType="com.zzsoft.weixin.dao.domain.MsgArticle" flushCache="true">
 		UPDATE wxcms_article SET
 		<if test="title != '' and title != null">
 			TITLE=#{title},

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <!--  the code template created by wxmp-generator @author hermit @version 2.0 @date 2018-04-17 10:43:21 -->
-<mapper namespace="com.zzsoft.weixin.wxcms.mapper.TplMsgTextDao">
+<mapper namespace="com.zzsoft.weixin.dao.mapper.TplMsgTextDao">
 
-	<select id="getTplMsgTextByPage" parameterType="com.zzsoft.weixin.wxcms.domain.TplMsgText" resultType="com.zzsoft.weixin.wxcms.domain.TplMsgText">
+	<select id="getTplMsgTextByPage" parameterType="com.zzsoft.weixin.dao.domain.TplMsgText" resultType="com.zzsoft.weixin.dao.domain.TplMsgText">
 		SELECT b.msg_type ,b.input_code ,t.* FROM wxcms_tpl_msg_text t , wxcms_msg_base b
 		WHERE t.base_id = b.id
 		<if test="inputcode != '' and inputcode != null">
@@ -14,7 +14,7 @@
 		</if>
 		ORDER BY b.create_time DESC
 	</select>
-	<select id="getTplMsgTextList" parameterType="com.zzsoft.weixin.wxcms.domain.TplMsgText" resultType="com.zzsoft.weixin.wxcms.domain.TplMsgText">
+	<select id="getTplMsgTextList" parameterType="com.zzsoft.weixin.dao.domain.TplMsgText" resultType="com.zzsoft.weixin.dao.domain.TplMsgText">
 		SELECT b.msg_type ,b.input_code ,t.* FROM wxcms_tpl_msg_text t , wxcms_msg_base b
 		WHERE t.base_id = b.id
 		<if test="inputcode != '' and inputcode != null">
@@ -25,19 +25,19 @@
 		</if>
 		ORDER BY b.create_time DESC
 	</select>
-	<select id="getById" parameterType="java.lang.String" resultType="com.zzsoft.weixin.wxcms.domain.TplMsgText">
+	<select id="getById" parameterType="java.lang.String" resultType="com.zzsoft.weixin.dao.domain.TplMsgText">
 		SELECT * FROM wxcms_tpl_msg_text WHERE ID = #{id}
 	</select>
 	
-	<insert id="add" parameterType="com.zzsoft.weixin.wxcms.domain.TplMsgText" flushCache="true">
+	<insert id="add" parameterType="com.zzsoft.weixin.dao.domain.TplMsgText" flushCache="true">
 		INSERT INTO wxcms_tpl_msg_text (TITLE, CONTENT,BASE_ID,ACCOUNT,TPL_ID,WX_TPL)  VALUES ( #{title},#{content},#{baseId},#{account},#{tplId},#{wxTpl}  )
 	</insert>
 
-	<update id="update" parameterType="com.zzsoft.weixin.wxcms.domain.TplMsgText" flushCache="true">
+	<update id="update" parameterType="com.zzsoft.weixin.dao.domain.TplMsgText" flushCache="true">
 		UPDATE wxcms_tpl_msg_text SET CONTENT = #{content},TITLE = #{title},TPL_ID=#{tplId},WX_TPL=#{wxTpl} WHERE ID = #{id}
 	</update>
 
-	<delete id="delete" parameterType="com.zzsoft.weixin.wxcms.domain.TplMsgText" >
+	<delete id="delete" parameterType="com.zzsoft.weixin.dao.domain.TplMsgText" >
 		DELETE FROM wxcms_tpl_msg_text
 		<where>
 			<if test="id != null">
@@ -49,7 +49,7 @@
 		</where>
 	</delete>
 
-	<select id="getByBaseId" parameterType="java.lang.String" resultType="com.zzsoft.weixin.wxcms.domain.TplMsgText">
+	<select id="getByBaseId" parameterType="java.lang.String" resultType="com.zzsoft.weixin.dao.domain.TplMsgText">
 		SELECT * FROM wxcms_tpl_msg_text WHERE base_id = #{baseid}
 	</select>
 </mapper>

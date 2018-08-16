@@ -6,7 +6,7 @@ import com.zzsoft.weixin.core.exception.WxErrorException;
 import com.zzsoft.weixin.wxapi.process.HttpMethod;
 import com.zzsoft.weixin.wxapi.process.MpAccount;
 import com.zzsoft.weixin.wxapi.process.WxApi;
-import com.zzsoft.weixin.wxapi.process.WxApiClient;
+import com.zzsoft.weixin.service.WxApiClient;
 import com.zzsoft.weixin.dao.domain.UserTag;
 import com.zzsoft.weixin.dao.mapper.UserTagDao;
 import com.zzsoft.weixin.wxcms.service.UserTagService;

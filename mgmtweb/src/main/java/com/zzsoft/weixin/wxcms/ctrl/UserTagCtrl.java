@@ -13,7 +13,7 @@ import com.zzsoft.weixin.core.common.Constants;
 import com.zzsoft.weixin.core.exception.WxErrorException;
 import com.zzsoft.weixin.core.util.AjaxResult;
 import com.zzsoft.weixin.wxapi.process.MpAccount;
-import com.zzsoft.weixin.wxapi.process.WxApiClient;
+import com.zzsoft.weixin.service.WxApiClient;
 import com.zzsoft.weixin.wxapi.process.WxMemoryCacheClient;
 import com.zzsoft.weixin.dao.domain.AccountFans;
 import com.zzsoft.weixin.dao.domain.UserTag;

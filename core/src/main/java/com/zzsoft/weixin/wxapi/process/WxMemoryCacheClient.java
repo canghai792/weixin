@@ -249,6 +249,24 @@ public class WxMemoryCacheClient {
 	 * @return String
 	 */
 	public static String getAccount() {
-		return (String) CacheUtils.get(SESSION_ACCOUNT);
+		return "test";
+		/*return (String) CacheUtils.get(SESSION_ACCOUNT);*/
+	}
+// todo
+	//测试用，专用于单账号
+	static{
+		Map<String,MpAccount> mpAccountMap = (Map<String, MpAccount>) CacheUtils.get("mpAccountMap");
+		if(mpAccountMap==null){
+			mpAccountMap=Maps.newHashMap();
+		}
+		MpAccount mpAccount = new MpAccount();
+		mpAccount.setAccount("test");
+		mpAccount.setAppid("wxdc86e9a8eb513d84");
+		mpAccount.setAppsecret("4ec35e5969be5ee1386549ae94c04ff4");
+		mpAccount.setToken("1234abcd1234abcd");
+		mpAccount.setMsgcount(7);
+		mpAccount.setUrl("");
+		mpAccountMap.put("test",mpAccount);
+		CacheUtils.put("mpAccountMap",mpAccountMap);
 	}
 }
