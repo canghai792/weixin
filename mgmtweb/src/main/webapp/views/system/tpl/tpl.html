@@ -102,8 +102,8 @@
                     template: '/views/common/template/fans-chose.html',
                     height: 600,
                     yes:function (index) {
-                        if(GLOBAL.choosed.length<2){
-                            layer.msg("至少选择2个粉丝");
+                        if(GLOBAL.choosed.length<1){
+                            layer.msg("至少选择1个粉丝");
                             return false;
                         }
                         $.ajax({

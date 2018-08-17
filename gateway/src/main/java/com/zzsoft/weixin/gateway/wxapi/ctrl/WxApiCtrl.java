@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
-
+ *//*
 
 package com.zzsoft.weixin.gateway.wxapi.ctrl;
 
@@ -49,9 +49,10 @@ import java.io.IOException;
 import java.util.*;
 
 
-*
+*/
+/**
  * 微信与开发者服务器交互接口
-
+ *//*
 
 @Controller
 @RequestMapping("/wxapi")
@@ -66,12 +67,13 @@ public class WxApiCtrl extends BaseCtrl{
 	@Resource
 	private MsgNewsService msgNewsService;
 
-*
+	*/
+/**
 	 * GET请求：进行URL、Tocken 认证；
 	 * 1. 将token、timestamp、nonce三个参数进行字典序排序
 	 * 2. 将三个参数字符串拼接成一个字符串进行sha1加密
 	 * 3. 开发者获得加密后的字符串可与signature对比，标识该请求来源于微信
-
+	 *//*
 
 	@RequestMapping(value = "/{account}/message",  method = RequestMethod.GET)
 	public @ResponseBody String doGet(HttpServletRequest request,@PathVariable String account) {
@@ -102,9 +104,10 @@ public class WxApiCtrl extends BaseCtrl{
 		return "error";
 	}
 
-*
+	*/
+/**
 	 * POST 请求：进行消息处理；
-	 *
+	 * *//*
 
 	@RequestMapping(value = "/{account}/message", method = RequestMethod.POST)
 	public @ResponseBody String doPost(HttpServletRequest request,@PathVariable String account,HttpServletResponse response) {
@@ -269,12 +272,13 @@ public class WxApiCtrl extends BaseCtrl{
 		}
 	}
 
-*
+	*/
+/**
 	 * 生成二维码
 	 * @param request
 	 * @param num 二维码参数
 	 * @return
-
+	 *//*
 
 	@RequestMapping(value = "/createQrcode", method = RequestMethod.POST)
 	public ModelAndView createQrcode(HttpServletRequest request,Integer num) throws WxErrorException {
@@ -316,11 +320,12 @@ public class WxApiCtrl extends BaseCtrl{
 		mv.addObject("failureMsg", rstMsg);
 	}
 
-*
+	*/
+/**
 	 * 发送客服消息
 	 * @param openid ： 粉丝的openid
 	 * @return
-
+	 *//*
 
 	@RequestMapping(value = "/sendCustomTextMsg", method = RequestMethod.POST)
 	public void sendCustomTextMsg(HttpServletRequest request,HttpServletResponse response,String openid) throws WxErrorException {
@@ -338,10 +343,11 @@ public class WxApiCtrl extends BaseCtrl{
 		}
 	}
 
-*
+	*/
+/**
 	 * 发送模板消息
 	 * @return
-
+	 *//*
 
 	@RequestMapping(value = "/sendTemplateMessage", method = RequestMethod.POST)
 	@ResponseBody
@@ -370,12 +376,13 @@ public class WxApiCtrl extends BaseCtrl{
 		return AjaxResult.success();
 	}
 
-*
+	*/
+/**
 	 * 获取js ticket
 	 * @param request
 	 * @param url
 	 * @return
-
+	 *//*
 
 	@RequestMapping(value = "/jsTicket")
 	@ResponseBody
@@ -391,13 +398,14 @@ public class WxApiCtrl extends BaseCtrl{
 		return jv.toString();
 	}
 
-*
+	*/
+/**
 	 * js支付
 	 * 支付授权目录一定要写对，否则js一直会提示 {chooseWXPay:fail}
 	 * 支付授权目录指的是调用jsapi支付页面的文件目录（且一定要以/结尾）
 	 * 现在jsapi支付的支付页面是为http://www.yjydt.cn/wxweb/jssdk.jsp
 	 * 故支付授权目录为http://www.yjydt.cn/wxweb/
-
+	 *//*
 
 	@RequestMapping(value = "/pay")
 	@ResponseBody
@@ -409,10 +417,11 @@ public class WxApiCtrl extends BaseCtrl{
 		MpAccount mpAccount = WxMemoryCacheClient.getMpAccount();//获取缓存中的唯一账号
 		log.info("-------------------------------------jsPay-----<2>-------------------mpAccount:"+mpAccount.getAppid());
 
-	      timestamp: 1414723227,
+	*/
+/*	      timestamp: 1414723227,
 	      nonceStr: 'noncestr',
 	      package: 'addition=action_id%3dgaby1234%26limit_pay%3d&bank_type=WX&body=innertest&fee_type=1&input_charset=GBK&notify_url=http%3A%2F%2F120.204.206.246%2Fcgi-bin%2Fmmsupport-bin%2Fnotifypay&out_trade_no=1414723227818375338&partner=1900000109&spbill_create_ip=127.0.0.1&total_fee=1&sign=432B647FE95C7BF73BCD177CEECBEF8D',
-	      paySign: 'bd5b1933cda6e9548862944836a9b52e8c9a2b69'
+	      paySign: 'bd5b1933cda6e9548862944836a9b52e8c9a2b69'*//*
 
 
 		JsonView jv = new JsonView();
@@ -422,11 +431,12 @@ public class WxApiCtrl extends BaseCtrl{
 	}
 
 
-*
+	*/
+/**
 	 * 微信异步返回
 	 * @param requestBodyXml
 	 * @return
-
+	 *//*
 
 	@RequestMapping(value = "/wxipay_noity")
 	public @ResponseBody com.zzsoft.weixin.core.util.wx.HTTPResultXml wxipay_noity(@RequestBody String requestBodyXml) {
@@ -462,7 +472,8 @@ public class WxApiCtrl extends BaseCtrl{
 
 		//String openid = WxMemoryCacheClient.getOpenid(request.getSession().getId());//先从缓存中获取openid
 
-	if(!array_key_exists("transaction_id", $data)){
+	*/
+/*	if(!array_key_exists("transaction_id", $data)){
 			$msg = "输入参数不正确";
 			return false;
 		}
@@ -471,18 +482,19 @@ public class WxApiCtrl extends BaseCtrl{
 			$msg = "订单查询失败";
 			return false;
 		}
-
+		*//*
 
 		return httpResultXml;
 	}
 
 
-*
+    */
+/**
      * 给粉丝发送文本消息
      * @param msgId
      * @param openid
      * @return
-
+     *//*
 
 	@RequestMapping(value = "/sendTextMsgByOpenId", method = RequestMethod.POST)
 	@ResponseBody
@@ -499,13 +511,14 @@ public class WxApiCtrl extends BaseCtrl{
 		}
 	}
 
-*
+	*/
+/**
 	 * 客服接口-发送图文消息
 	 *
 	 * @param id
 	 * @param openid
 	 * @return
-
+	 *//*
 
 	@RequestMapping(value = "/sendNewsByOpenId", method = RequestMethod.POST)
 	@ResponseBody
@@ -523,12 +536,13 @@ public class WxApiCtrl extends BaseCtrl{
 		}
 	}
 
-*
+    */
+/**
      * 客服接口 -批量发送文本消息
      * @param textId
      * @param openIds
      * @return
-
+     *//*
 
 	@RequestMapping(value = "/batchSendText", method = RequestMethod.POST)
 	@ResponseBody
@@ -553,12 +567,13 @@ public class WxApiCtrl extends BaseCtrl{
 		return code;
 	}
 
-*
+	*/
+/**
      * 群发-文本消息
      * @param textId
      * @param openIds
      * @return
-
+     *//*
 
 	@RequestMapping(value = "/massSendTextByOpenIds", method = RequestMethod.POST)
 	@ResponseBody
@@ -587,12 +602,13 @@ public class WxApiCtrl extends BaseCtrl{
 		return code;
 	}
 
-*
+	*/
+/**
 	 * 高级群发-图文消息|
 	 * @param newsId
 	 * @param openIds
 	 * @return
-
+	 *//*
 
 	@RequestMapping(value = "/massSendNewsByOpenIds", method = RequestMethod.POST)
 	@ResponseBody
@@ -627,12 +643,13 @@ public class WxApiCtrl extends BaseCtrl{
 	}
 
 
-*
+	*/
+/**
 	 * 高级群发-图文消息|
 	 * @param mediaId
 	 * @param openIds
 	 * @return
-
+	 *//*
 
 	@RequestMapping(value = "/sendMaterialByOpenIds", method = RequestMethod.POST)
 	@ResponseBody
@@ -706,13 +723,14 @@ public class WxApiCtrl extends BaseCtrl{
 		code = failureMsg;
 		return code;
 	}
-*
+	*/
+/**
 	 * 用户统计分析
 	 * @param start 开始时间
 	 * @param end 结束时间
 	 * @return
 	 * @throws WxErrorException
-
+	 *//*
 
 	@RequestMapping(value = "/userDataCube")
 	@ResponseBody
